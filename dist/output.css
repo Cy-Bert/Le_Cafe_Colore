@@ -515,3 +515,107 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.font-\[\] {
+  font-family: ;
+}
+
+.font-\[noto\] {
+  font-family: noto;
+}
+
+.font-\[notosans\] {
+  font-family: notosans;
+}
+
+.font-\[monts\] {
+  font-family: monts;
+}
+
+.font-\[montse\] {
+  font-family: montse;
+}
+
+.font-\[montserr\] {
+  font-family: montserr;
+}
+
+.font-\[montserrat\] {
+  font-family: montserrat;
+}
+
+.font-\[assistant\] {
+  font-family: assistant;
+}
+
+.font-\[Montserrat\] {
+  font-family: Montserrat;
+}
+
+.font-\[Montserrat-variable\] {
+  font-family: Montserrat-variable;
+}
+
+.font-\[assistant-variable\] {
+  font-family: assistant-variable;
+}
+
+.font-\[Montserrat-variabl\] {
+  font-family: Montserrat-variabl;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
