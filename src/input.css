@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-h1 text-3xl flex justify-center font-bold;
+  }
+  h2 {
+    @apply font-h2 text-xl flex justify-center py-5 font-bold;
+  }
+  p {
+    @apply font-p;
+  }
+  section {
+    @apply;
+  }
+}
+
+@layer components {
+  .bouton {
+    @apply font-p text-white font-bold rounded-2xl w-32 h-10;
+  }
+  .input {
+    @apply bg-black;
+  }
+
+  .image {
+    @apply shadow-lg;
+  }
+}
