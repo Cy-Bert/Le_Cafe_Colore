@@ -12,9 +12,10 @@
   p {
     @apply font-p;
   }
-  section {
+  /* MERCI POUR LE BUG */
+  /* section {
     @apply;
-  }
+  } */
 }
 
 @layer components {
@@ -24,8 +25,8 @@
   .input {
     @apply bg-black;
   }
-
   .image {
     @apply shadow-lg;
   }
 }
+
