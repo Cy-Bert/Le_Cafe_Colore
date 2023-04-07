@@ -12,9 +12,9 @@
   p {
     @apply font-p;
   }
-  section {
+  /* section {
     @apply;
-  }
+  } */
 }
 
 @layer components {
