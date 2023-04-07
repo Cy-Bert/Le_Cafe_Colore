@@ -422,6 +422,34 @@ video {
   display: none;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat, Arial;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-family: Assistant, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+p {
+  font-family: Noto Sans, Roboto;
+}
+
+section {
+  border-style: solid;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -550,6 +578,21 @@ video {
 
 .mr-10 {
   margin-right: 2.5rem;
+}
+
+.bouton {
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 1rem;
+  font-family: Noto Sans, Roboto;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.input {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .flex {
