@@ -12,6 +12,7 @@
   p {
     @apply font-p;
   }
+  /* MERCI POUR LE BUG */
   /* section {
     @apply;
   } */
@@ -24,8 +25,8 @@
   .input {
     @apply bg-black;
   }
-
   .image {
     @apply shadow-lg;
   }
 }
+
