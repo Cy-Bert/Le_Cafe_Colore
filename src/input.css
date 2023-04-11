@@ -4,26 +4,25 @@
 
 @layer base {
   h1 {
-    @apply font-h1 text-3xl flex justify-center font-bold;
+    @apply font-h1 text-3xl font-bold;
   }
   h2 {
-    @apply font-h2 text-xl flex justify-center py-5 font-bold;
+    @apply font-h2 text-xl py-5 font-bold;
   }
   p {
     @apply font-p;
   }
-  /* MERCI POUR LE BUG */
-  /* section {
-    @apply;
-  } */
+  section {
+    @apply m-10 border-4 p-5 rounded-lg bg-[#fafafa] shadow-2xl;
+  }
 }
 
 @layer components {
   .bouton {
-    @apply font-p text-white font-bold rounded-2xl w-32 h-10;
+    @apply font-p border text-white font-bold rounded-2xl w-32 h-10;
   }
   .input {
-    @apply bg-black;
+    @apply border shadow rounded;
   }
   .image {
     @apply shadow-lg;
