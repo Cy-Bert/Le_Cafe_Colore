@@ -1,69 +1,117 @@
 <link rel="stylesheet" href="/dist/output.css">
 
 <body>
-      
-    <section class="bg-gray-100 py-8 border-black">
+    <section class="bg-gray-100 py-8 border-deep-saffron">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
-          <div class="md:w-1/2 lg:w-2/3 md:pr-8">
-            <h2 class="text-2xl md:text-3xl font-bold mb-2">Rencontrez des personnes qui vous ressemblent</h2>
-            <p class="mb-4">Rencontrez des personnes formidables de la communauté LGBTQIA+ autour d'un café chaud et d'une conversation chaleureuse - rejoignez-nous pour une expérience de rencontre inclusive et conviviale !</p>
-            <button id="inscription-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mb-4">
-              Je souhaite m'inscrire
-            </button>
-          </div>
-          <div class="md:w-1/2 lg:w-1/3 mb-4 md:mb-0 text-center">
-            <p class="text-lg text-black mb-4 italic font-bold"> Photo prise le 11/04/2023 au café le Pixel </p>
-            <img src="https://hebdo25.net/wp-content/uploads/2022/07/Pixel-terrasse-scaled.jpg" alt="Bar image" class="w-full h-auto md:h-full md:object-cover">
-          </div>
+            <div class="md:w-1/2 lg:w-2/3 md:pr-8">
+                <p class="mb-4 text-center italic" id="date"></p>
+                <h2 class="text-2xl md:text-3xl font-bold mb-2">Rencontrez des personnes qui vous ressemblent</h2>
+                <p class="mb-4 text-center">Rencontrez des personnes formidables de la communauté LGBTQIA+ autour d'un
+                    café chaud et
+                    d'une conversation chaleureuse, rejoignez-nous pour une expérience de rencontre inclusive et
+                    conviviale !</p>
+                <button id="inscription-btn" class="mx-auto flex justify-center items-center bg-rose-600 hover:bg-rose-700 text-white font-bold py-2 px-4 rounded w-1/2">
+                    Je souhaite m'inscrire à une rencontre
+                </button>
+                <div class="mb-4"></div>
+            </div>
+            <div class="md:w-1/2 lg:w-1/3 mb-4 md:mb-0 text-center">
+                <p class="text-lg text-black mb-4 italic font-bold"> Photo prise le 11/04/2023 au café le Pixel </p>
+                <img src="https://hebdo25.net/wp-content/uploads/2022/07/Pixel-terrasse-scaled.jpg" alt="Bar image" class="w-full h-auto md:h-full md:object-cover">
+            </div>
+
         </div>
-      </section>
-      
-      
-      <!-- Popup d'inscription -->
-      <div id="inscription-popup" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden">
-        <div class="bg-white rounded p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <h2 class="text-xl font-bold mb-4">Inscription</h2>
-          <form>
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold mb-2" for="prenom">
-                Prénom
-                </label>
-                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="prenom" type="text" placeholder="Votre prénom">
+    </section>
+    <!-- Popup d'inscription -->
+      <div id="inscription-popup" class="hidden">
+      <div class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
             </div>
-            <div class="mb-4">
-              <label class="block text-gray-700 font-bold mb-2" for="nom">
-                Nom
-              </label>
-              <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nom" type="text" placeholder="Votre nom">
+
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
+
+            <div class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+
+                <div class="px-4 py-5 bg-gradient-to-r from-rose-600 via-rose-400 to-rose-500 sm:px-6">
+                    <h3 class="text-lg font-medium leading-6 text-white text-center">
+                          S'inscrire à une rencontre
+                    </h3>
+                </div>
+
+
+                <div class="px-4 pt-5 pb-4 bg-white sm:p-6 sm:pb-4">
+                    <form method="post" action="mailto:admin@test.com" enctype="text/plain">
+                        <div class="mb-4">
+                          <label class="block text-gray-700 font-bold mb-2" for="prenom">
+                            Prénom
+                          </label>
+                          <input class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                            id="prenom" type="text" placeholder="Votre prénom" name="Prénom">
+                        </div>
+                        <div class="mb-4">
+                          <label class="block text-gray-700 font-bold mb-2" for="nom">
+                            Nom
+                          </label>
+                          <input class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                            id="nom" type="text" placeholder="Votre nom" name="Nom">
+                        </div>
+                        <div class="mb-4">
+                          <label class="block text-gray-700 font-bold mb-2" for="email">
+                            Email
+                          </label>
+                          <input class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email" type="email" placeholder="Votre email" name="Email">
+                        </div>
+                        <div class="mb-4">
+                          <label class="block text-gray-700 font-bold mb-2" for="telephone">
+                            Téléphone portable
+                          </label>
+                          <input class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                            id="telephone" type="tel" placeholder="Votre téléphone" name="Téléphone">
+                        </div>
+                        <button type="submit" class="text-center block mx-auto bg-rose-600 hover:bg-rose-700 text-white font-bold py-2 px-4 rounded">
+                          Envoyer
+                        </button>
+                      </form>
+                </div>
+
             </div>
-            <div class="mb-4">
-              <label class="block text-gray-700 font-bold mb-2" for="email">
-                Email
-              </label>
-              <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Votre email">
-            </div>
-            <button class="text-center block mx-auto bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
-                Envoyer
-              </button>
-          </form>
         </div>
-      </div>
-      
-      <script>
+    </div>
+</div>
+    <script>
+        // Fonction pop-up pour le bouton d'inscription aux rencontres
         const inscriptionBtn = document.getElementById("inscription-btn");
         const popup = document.getElementById("inscription-popup");
-      
-        inscriptionBtn.addEventListener("click", function() {
-          popup.classList.remove("hidden");
+
+        inscriptionBtn.addEventListener("click", function () {
+            popup.classList.remove("hidden");
+            popup.classList.add("flex");
         });
-      
-        popup.addEventListener("click", function(event) {
-          if (event.target === popup) {
-            popup.classList.add("hidden");
-          }
+
+        popup.addEventListener("click", function (event) {
+            if (event.target === popup) {
+                popup.classList.add("hidden");
+                popup.classList.remove("flex");
+            }
         });
-      </script>
-      
-      
+    </script>
+
+    <script>
+        // Fonction pour obtenir la date du prochain mercredi
+        function getNextWednesday() {
+            let date = new Date();
+            let day = date.getDay();
+            let nextWednesday = new Date();
+            nextWednesday.setDate(date.getDate() + (3 + 7 - day) % 7);
+            return nextWednesday;
+        }
+
+        // Afficher la date du prochain mercredi
+        let nextWednesday = getNextWednesday();
+        document.getElementById("date").innerHTML = "La prochaine rencontre se tiendra le " + nextWednesday.toLocaleDateString();
+    </script>
 
 </body>
