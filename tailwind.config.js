@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         'vivid-red': '#FF0018',
         'deep-saffron': '#FFA52C',
-        'maximum-yellow': '#FFFF41',
+        'vivid-yellow': '#FACC15',
         'ao': '#008018',
         'blue-royal': '#0000F9',
         'philippine-violet': '#86007D',
