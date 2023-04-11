@@ -1,14 +1,16 @@
 <link rel="stylesheet" href="/dist/output.css" />
 <body>
-  <section>
-    <h1>Contactez nous</h1>
-    <p>Pour plus de renseignement contactez nous</p>
-    <form action="contact.js">
-      <label for="name">Nom</label><input type="text" required />
-      <label for="mail">E-mail</label><input type="mail" required />
-      <label for="phone">Téléphone</label><input type="phone" />
-      <label for="mesage">Message</label> <input type="text-area" required />
-      <input type="submit" value="Envoyer" />
-    </form>
+  <section class="border-philippine-violet">
+    <h2>Contactez nous</h2>
+    <p>Pour plus de renseignement contactez nous ! 
+        Nous vous repondrons dans les plus bref délais
+    </p>
+  <form action="contact.js" class="flex flex-col">
+    <div class="flex flex-col my-2"><label class="my-2" for="name">Nom </label><input class="input" type="text" required /></div>
+    <div class="flex flex-col my-2"><label class="my-2" for="mail">E-mail </label><input class="input" type="mail" required /></div>
+    <div class="flex flex-col my-2"><label class="my-2" for="phone">Téléphone </label><input class="input" type="phone" /></div>
+    <div class="flex flex-col my-2"><label class="my-2" for="mesage">Message </label> <input class="input" type="text-area" rows="50" required /></div>
+    <div class="flex justify-center mt-4"><input class="bouton text-philippine-violet hover:text-white border-philippine-violet hover:bg-philippine-violet" type="submit" value="Envoyer" /></div>
+  </form>
   </section>
 </body>
