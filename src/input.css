@@ -12,12 +12,13 @@
   p {
     @apply font-p;
   }
-  section {
-    @apply m-10 border-4 p-5 rounded-lg bg-[#fafafa] shadow-2xl;
-  }
+  
 }
 
 @layer components {
+  .bloc {
+    @apply m-20 border-4 p-5 rounded-2xl bg-[#fafafa] shadow-2xl;
+  }
   .bouton {
     @apply font-p border text-white font-bold rounded-2xl w-32 h-10;
   }
