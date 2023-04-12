@@ -4,54 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css"">
     <title>Document</title>
 </head>
 <body>
 
-<div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+<div class="fixed z-10 left-0 top-0 h-full w-full bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)]">
+       
+        <div class="flex flex-col justify-center items-center bg-[#FAFAFA] p-5 w-2/6 border-2 rounded border-philippine-violet mx-auto my-[15%]">
+          
+          <p class="text-center">Merci pour votre message ! <br> On revient vers vous tres rapidement 😊  </p>
+          <button onclick="window.location.href = 'https://le-cafe-colore.netlify.app/';" class="bouton mt-5 text-philippine-violet hover:text-white border-philippine-violet hover:bg-philippine-violet">Retour</button>
         </div>
       </div>
-      <style>
-        .modal {
-     
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
-    }
     
-    /* Modal Content/Box */
-    .modal-content {
-      background-color: #fafafa;
-      margin: 15% auto; /* 15% from the top and centered */
-      padding: 20px;
-      border: 1px solid #888;
-      width: 50%; /* Could be more or less, depending on screen size */
-    }
-    
-    /* The Close Button */
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-      </style>
 </body>
 </html>
