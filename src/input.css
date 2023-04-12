@@ -4,29 +4,28 @@
 
 @layer base {
   h1 {
-    @apply font-h1 text-3xl  font-bold;
+    @apply font-h1 text-3xl font-bold;
   }
   h2 {
-    @apply font-h2 text-xl  py-5 font-bold;
+    @apply font-h2 text-xl py-5 font-bold;
   }
   p {
     @apply font-p;
   }
-  /* MERCI POUR LE BUG */
-  /* section {
-    @apply;
-  } */
+  
 }
 
 @layer components {
+  .bloc {
+    @apply m-20 border-4 p-5 rounded-2xl bg-[#fafafa] shadow-2xl;
+  }
   .bouton {
-    @apply font-p text-white font-bold rounded-2xl w-32 h-10;
+    @apply font-p border text-white font-bold rounded-2xl w-32 h-10;
   }
   .input {
-    @apply bg-black;
+    @apply border shadow rounded;
   }
   .image {
     @apply shadow-lg;
   }
 }
-
