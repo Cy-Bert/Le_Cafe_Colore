@@ -1,4 +1,6 @@
 
+// Import des elements HTML
+
 let listChildren = body.children;
 
 for (let i = 0; i < listChildren.length; i++) {
@@ -15,3 +17,6 @@ for (let i = 0; i < listChildren.length; i++) {
     xhr.send();
   }
 }
+// initiation du script AOS
+
+
