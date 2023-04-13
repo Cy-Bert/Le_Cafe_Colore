@@ -17,6 +17,6 @@ for (let i = 0; i < listChildren.length; i++) {
     xhr.send();
   }
 }
-// initiation du script AOS
+
 
 
