@@ -25,6 +25,7 @@
   .input {
     @apply bg-black;
   }
+  /*focus:outline-none */
   .image {
     @apply shadow-lg;
   }
