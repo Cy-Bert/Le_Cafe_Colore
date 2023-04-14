@@ -16,6 +16,22 @@ module.exports = {
         'blue-royal': '#0000F9',
         'philippine-violet': '#86007D',
       },
+      animation: {
+        unicorn: 'unicorn 1s ease forwards'
+      },
+      keyframes: {
+        unicorn : {
+          '0%': {
+            transform: 'rotate(0deg) translateY(-50px) scale(0.5)',
+            opacity: '1',
+          },
+        
+          '100%': {
+            transform: 'rotate(360deg) translateY(calc(20vh + 50px)) scale(1.5)',
+            opacity: '0',
+          }
+        }
+      }
     },
     plugins: [],
   },
