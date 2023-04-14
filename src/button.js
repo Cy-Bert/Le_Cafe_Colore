@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var button = document.getElementById('unicornRain');
-  var container = document.getElementById('unicornContainer');
+  let button = document.getElementById('unicornRain');
+  let container = document.getElementById('unicornContainer');
 
   function launchRain() {
-    for (var i = 0; i < 200; i++) {
-      var unicorn = document.createElement('img');
+    for (let i = 0; i < 200; i++) {
+      let unicorn = document.createElement('img');
       unicorn.setAttribute('src', 'https://api.iconify.design/fluent-emoji-flat:unicorn.svg?color=%23ffd700');
       unicorn.classList.add('w-12', 'h-auto', 'animate-unicorn');
       unicorn.style.position = 'relative';
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
       unicorn.style.animationDelay = Math.random() * 3 + 's';
       container.appendChild(unicorn);
 
-      var rainbow = document.createElement('img');
+      let rainbow = document.createElement('img');
       rainbow.setAttribute('src', 'https://api.iconify.design/fluent-emoji-flat:rainbow.svg?color=%23ffd700');
       rainbow.classList.add('w-12', 'h-auto', 'animate-unicorn');
       rainbow.style.position = 'relative';
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
       rainbow.style.animationDelay = Math.random() * 3 + 's';
       container.appendChild(rainbow);
 
-      var star = document.createElement('img');
+      let star = document.createElement('img');
       star.setAttribute('src','https://api.iconify.design/iconoir:bright-star.svg?color=%23ffd700');
       star.classList.add('w-16', 'h-auto','animate-unicorn');
       star.style.position = 'relative';
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
       star.style.animationDelay = Math.random() * 3 + 's';
       container.appendChild(star);
 
-      var cat = document.createElement('img');
+      let cat = document.createElement('img');
       cat.setAttribute('src','https://api.iconify.design/fluent-emoji:kissing-cat.svg?color=%23ffd700');
       cat.classList.add('w-12', 'h-auto','animate-unicorn');
       cat.style.position = 'relative';
