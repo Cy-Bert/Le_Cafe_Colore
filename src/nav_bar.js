@@ -1,5 +1,5 @@
 
-  // document.getElementById('navToggle').onclick = function () 
-  //                   {
-  // document.getElementById("navContent").classList.toggle("hidden");
-  //                   }
+  document.getElementById('navToggle').onclick = function () 
+                    {
+  document.getElementById("navContent").classList.toggle("hidden");
+                    }
