@@ -9,6 +9,7 @@
     <script defer src="/src/script.js"></script>
     <script defer src="src/nav_bar.js"></script>
     <script defer src="src/rencontre.js"></script>
+    <script defer src="src/don.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
@@ -18,15 +19,449 @@
     />
   </head>
    <body id="body" class=" bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] bg-no-repeat">
-    <header data-aos="fade-down" id="header"></header>
-    <section data-aos="fade-right" class="bloc border-vivid-red" id="intro"></section>
-    <section data-aos="fade-left" class="bloc border-deep-saffron" id="rencontre"></section>
-    <section data-aos="fade-right" class="bloc border-vivid-yellow" id="lexique"></section>
-    <section data-aos="fade-left" class="bloc border-ao" id="interview"></section>
-    <section data-aos="fade-right" class="bloc border-blue-royal" id="allerplusloin"></section>
-    <section data-aos="fade-left" class="bloc border-philippine-violet" id="contact"></section>
-    <footer data-aos="fade-up" id="footer"></footer>
-    <section id="donation"></section>
+    <header data-aos="fade-down" id="header">
+
+      <!-- mobile version -->
+      <div id="banner">
+          <div class="flex flex-col sm:flex-row justify-between mx-5 md:mx-20 mt-12 font-p">
+              <div class="flex items-center ">
+                  37 Grande Rue<br>
+                  25000 BESANCON
+              </div>
+
+              <img class="logo w-2/12" src="assets/img/logo_lcc.png"
+                  alt="Le logo de l'association représente une tasse de café avec une fumée aux couleurs du drapeau LGBT">
+              <div class="contact flex items-center">
+                  03 81 87 00 00<br>
+                  contact@lcc.fr
+              </div>
+          </div>
+      </div>
+
+
+      <div id="sticky_menu" class="flex flex-col sm:flex-row justify-between mx-5 md:mx-20 mt-12 lg:flex-col lg:mt-5 lg:items-center ">
+          <div>
+              <h1 class="uppercase mt-20 font-h1">
+                  l<span class="text-vivid-red">e&nbsp</span> c<span
+                      class="text-deep-saffron">a</span>f<span class="text-yellow-400">é&nbsp</span> c<span
+                      class="text-ao">o</span>l<span class="text-blue-royal">o</span>r<span
+                      class="text-philippine-violet">é</span>
+              </h1>
+          </div>
+
+
+          <nav class="mt-20 flex font-p flex-row-reverse ">
+
+              <div class="block lg:hidden">
+                  <button id="navToggle" class="flex items-center px-1 py-1 border rounded text-black border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+                      </svg>
+                  </button>
+              </div>
+              <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto sm:bg-opacity-25 sm:px-16 sm:py-8  " id="navContent">
+                  <div class="text-base">
+                      <a href="#intro"
+                          class="block mt-4 w-28 lg:inline-block lg:mt-0 text-center text-vivid-red  lg:mr-4 lg: border-vivid-red lg:border-2 lg:rounded-xl  lg:py-2 lg:hover:bg-vivid-red lg:hover:text-white lg:hover:font-semibold lg:text-black">
+                          Accueil
+                      </a>
+                      <a href="#rencontre"
+                          class="block mt-4 w-28 lg:inline-block lg:mt-0 text-center text-deep-saffron  lg:mr-4 lg: border-deep-saffron lg:border-2 lg:rounded-xl lg:py-2  lg:hover:bg-deep-saffron lg:hover:text-white lg:hover:font-semibold lg:text-black">
+                          Rencontres
+                      </a>
+                      <a href="#lexique"
+                          class="block mt-4 w-28 lg:inline-block lg:mt-0 text-center text-vivid-yellow lg:mr-4 lg: border-vivid-yellow lg:border-2 lg:rounded-xl lg:py-2  lg:hover:bg-vivid-yellow lg:hover:text-white lg:hover:font-semibold lg:text-black">
+                          Lexique
+                      </a>
+                      <a href="#interview"
+                          class="block mt-4 w-28 lg:inline-block lg:mt-0 text-center text-ao  lg:mr-4 lg: border-ao lg:border-2 lg:rounded-xl py-2  lg:hover:bg-ao lg:hover:text-white lg:hover:font-semibold lg:text-black">
+                          Interview
+                      </a>
+                      <a href="#allerplusloin"
+                          class="block mt-4 w-28 lg:inline-block lg:mt-0 text-center text-blue-royal lg:mr-4 lg: border-blue-royal lg:border-2 lg:rounded-xl lg:py-2  lg:hover:bg-blue-royal lg:hover:text-white lg:hover:font-semibold lg:text-black">
+                          Aller + loin
+                      </a>
+                      <a href="#contact"
+                          class="block mt-4 w-28 lg:inline-block lg:mt-0 text-center text-philippine-violet lg: border-philippine-violet lg:border-2 lg:rounded-xl lg:py-2  lg:hover:bg-philippine-violet lg:hover:text-white lg:hover:font-semibold lg:text-black">
+                          Contact
+                      </a>
+                  </div>
+              </div>
+          </nav>
+      </div>
+
+
+
+</header>
+    <section data-aos="fade-right" class="bloc border-vivid-red" id="intro">      <h2 class="text-vivid-red">Introduction</h2>
+
+      <div class="flex flex-col lg:flex-row mx-10">
+          <div class="">
+              <img class="w-6/12 m-auto lg:w-7/12" src="assets/img/image_intro.png"
+                  alt="Photographie de deux mains qui se tienne avec un reflet aux couleurs du drapeau LGBT">
+          </div>
+
+          <div>
+              <p class="mt-10"> Le café coloré est une association locale loi-1901, née le 3 janvier 2023, elle à pour but
+                  de sensibiliser
+                  les personnes à la cause LGBTQIA+.<br>
+                  Son objectif premier est d'aider, d'orienter, écouter les personnes dans le doute.<br>
+                  Nous visons en priorité la convivialité en nous réunissant autour d'un café, d'un thé, ce que vous voulez. Venez nous
+                  rencontrer...
+                  vous rencontrer!
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+    <section data-aos="fade-left" class="bloc border-deep-saffron" id="rencontre"><div
+      class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center"
+    >
+      <div class="md:w-1/2 lg:w-2/3 md:pr-8 flex items-center flex-col">
+        <h2 class="text-deep-saffron md:text-3xl font-bold mb-2">Rencontres</h2>
+        <p class="mb-4 text-center">
+          Rencontrez des personnes formidables de la communauté LGBTQIA+ autour d'un
+          café chaud et d'une conversation chaleureuse, rejoignez-nous pour une
+          expérience de rencontre inclusive et conviviale !
+        </p>
+        <p class="mb-4 text-center italic" id="date"></p>
+        <button
+          id="inscription-btn"
+          class="bouton text-deep-saffron border-deep-saffron hover:bg-deep-saffron hover:text-white"
+        >
+          S'inscrire
+        </button>
+        <div class="mb-4"></div>
+      </div>
+      <div class="md:w-1/2 lg:w-1/3 mb-4 md:mb-0 text-center">
+        <img
+          src="/assets/img/pixel.jpg"
+          alt="Photo de la terrasse du café Le Pixel"
+          class="w-4/6 h-auto md:h-full md:object-cover"
+        />
+      </div>
+    </div>
+    
+    <!-- Popup d'inscription -->
+    <div id="inscription-popup" class="hidden">
+      <div
+        class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400"
+      >
+        <div
+          class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+        >
+          <div class="fixed inset-0 transition-opacity">
+            <div class="absolute inset-0 bg-gray-100 opacity-75"></div>
+          </div>
+    
+          <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
+    
+          <div
+            class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-headline"
+          >
+            <div class="px-4 py-5 bg-deep-saffron sm:px-6">
+              <h3 class="text-lg leading-6 font-bold text-center">
+                S'inscrire à une rencontre
+              </h3>
+            </div>
+    
+            <form
+              name="Rencontre"
+              method="POST"
+              data-netlify="true"
+              class="flex flex-col items-center"
+              action="/modal_rencontre"
+              netlify-honeypot="bot-field"
+            >
+              <input
+                type="hidden"
+                name="subject"
+                value="Nouvelle inscription a une rencontre :"
+              />
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="nom">
+                  Nom
+                </label>
+                <input
+                  class="input"
+                  id="nom"
+                  type="text"
+                  placeholder="Votre nom"
+                  name="Nom"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="email">
+                  Email
+                </label>
+                <input
+                  class="input"
+                  id="email"
+                  type="email"
+                  placeholder="Votre email"
+                  name="E-mail"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="telephone">
+                  Téléphone
+                </label>
+                <input
+                  class="input"
+                  id="telephone"
+                  type="tel"
+                  placeholder="Votre téléphone"
+                  name="Téléphone"
+                />
+              </div>
+              <button
+                type="submit"
+                class="bouton text-deep-saffron border-deep-saffron hover:bg-deep-saffron hover:text-white"
+              >
+                Envoyer
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section data-aos="fade-right" class="bloc border-vivid-yellow" id="lexique"> <div class=" flex flex-col gap-4 pb-6 ">
+      <h2 class="bg-gray-50 text-vivid-yellow text-3xl">Lexique</h2>
+          <div class="flex flex-row justify-around items-center">
+              <div class=" bg-gray-50 uppercase font-bold text-6xl">l
+              </div>
+              <div class="w-3/4 p-2 rounded-2xl bg-slate-300 font-p">L pour "lesbienne", il désigne une femme homosexuelle. C'est une femme qui aime les femmes.</div>
+          </div>
+          <div class="flex flex-row justify-around items-center">
+              <div class=" bg-gray-50 uppercase font-bold text-6xl">g
+              </div>
+              <div class="w-3/4 p-2 rounded-2xl bg-slate-300 font-p">G pour "gay", il désigne un homme homosexuel. C'est un homme qui aime les hommes.</div>
+          </div>
+          <div class="flex flex-row justify-around items-center">
+              <div class=" bg-gray-50 uppercase font-bold text-6xl">b
+              </div>
+              <div class="w-3/4 p-2 rounded-2xl bg-slate-300 font-p">B pour "bisexuel·le", le terme désigne une personne qui aime les hommes et les femmes.</div>
+          </div>
+          <div class="flex flex-row justify-around items-center">
+              <div class=" bg-gray-50 uppercase font-bold text-6xl">t
+              </div>
+              <div class="w-3/4 p-2 rounded-2xl bg-slate-300 font-p">T comme "trans", le terme désigne une personne née homme ou née femme et qui ne se sent pas appartenir à son genre de naissance. C'est le contraire de cisgenre, une personne née homme ou née femme et qui se sent appartenir à son genre de naissance.</div>
+          </div>
+          <div class="flex flex-row justify-around items-center">
+              <div class=" bg-gray-50 uppercase font-bold text-6xl">q
+              </div>
+              <div class="w-3/4 p-2 rounded-2xl bg-slate-300 font-p">Q comme "queer", il désigne une personne qui ne se reconnait pas dans la sexualité hétérosexuelle, ou ne sent pas appartenir à un genre défini.</div>
+          </div>
+          <div class="flex flex-row justify-around items-center">
+              <div class=" bg-gray-50 uppercase font-bold text-6xl">i
+              </div>
+              <div class="w-3/4 p-2 rounded-2xl bg-slate-300 font-p">I comme "intersexe", le terme désigne une personne née ni homme ni femme.</div>
+          </div>
+          <div class="flex flex-row justify-around items-center">
+              <div class="bg-gray-50 uppercase font-bold text-6xl">a
+              </div>
+              <div class="w-3/4 p-2 rounded-2xl bg-slate-300 font-p">A comme "asexuel", c'est à dire une personne qui ne ressent pas ou peu d'attirance sexuelle pour une autre personne.</div>
+          </div>
+          <div class="flex flex-row justify-around items-center">
+              <div class="bg-gray-50 uppercase font-bold text-6xl">+
+              </div>
+              <div class="w-3/4 p-2 rounded-2xl bg-slate-300 font-p">Le "+" intégre toutes les sexualités non mentionnées dans l'acronyme (pansexuelle, en questionnement, ...), ainsi que les allié·es, qui sont les personnes qui luttent auprès des LGBTQIA+ contre l'homophobie.</div>
+          </div>
+  </div>
+</section>
+    <section data-aos="fade-left" class="bloc border-ao" id="interview"> <div class="flex flex-col gap-4  pb-6">
+      <h2 class="text-ao">Interview</h2>
+      <div class="flex flex-col lg:flex-row justify-around items-center">
+          
+          <div class="p-2 lg:w-3/4 font-p">
+              <div class="bg-slate-300 rounded-2xl p-2 m-1 w-2/3 float-left"><span class="font-bold">LCC
+                  :</span> Peux-tu te présenter en quelques mots ?</div> 
+              <div class="bg-green-300 rounded-2xl p-2 m-1 w-2/3 float-right"><span class="font-bold">A :</span> Je m'appelle Alison et j'ai 27 ans. Je vis dans l'agglomération de
+              Besançon. J'ai deux métiers, aide à domicile le jour, et Flam's maker la nuit. Lesbienne autoproclamée
+              depuis toujours, j'ai pu mettre des mots sur ce que je ressentais à l'âge de 16/17 ans. </div>
+              <div class="bg-slate-300 rounded-2xl p-2 m-1 w-2/3 float-left"><span class="font-bold">LCC
+                  :</span> Peux-tu nous dire s'il t'est déjà arrivé d'avoir peur du fait de ton orientation sexuelle ?</div>
+              <div class="bg-green-300 rounded-2xl p-2 m-1 w-2/3 float-right"><span class="font-bold">A
+                  :</span> Oui j'ai déjà eu peur de me sentir exclue de la société. Mais aujourd'hui il est plus
+              facile de
+              s'identifier grâce au contenu culturel disponible. Pendant ma jeunesse il n'y avait pas de série TV qui
+              traitait du sujet. J'ai donc découvert ma sexualité sur le tard même si je le savais depuis toujours, je
+              ne savais pas comment l'identifier. Et puis aujourd'hui il est possible d'éduquer les personnes qui sont
+              curieuse sur ce sujet, ce n'était pas le cas au temps de nos grands-parents. </div>
+              <div class="bg-slate-300 rounded-2xl p-2 m-1 w-2/3 float-left"><span class="font-bold">LCC
+                  :</span> Aurais-tu aimé avoir un lieu comme notre café associatif dans ta jeunesse ?</div>
+              <div class="bg-green-300 rounded-2xl p-2 m-1 w-2/3 float-right"><span class="font-bold">A
+                  :</span> Cela m'aurait permis de trouver des gens qui ont le même vécu et de rencontrer des
+              personnes qui ne
+              te jugeront pas. C'est important d'avoir un lieu "safe" quand on a des questionnements sur notre
+              sexualité. Même si la société évolue ce n'est jamais évident de parler ouvertement de ce sujet, il y a
+              toujours des tabous qui subsistent.</div>
+          </div>
+          <div class="p-2"><img class="rounded-2xl" src="/assets/img/Alison.jpg"  
+              alt="personne interviewée"  width="350"></div>
+      </div>
+  </div></section>
+    <section data-aos="fade-right" class="bloc border-blue-royal" id="allerplusloin"><div class="flex flex-col">
+
+      <h2 class=" text-blue-royal">Allez plus loin</h2>
+
+      <div class="flex flex-col lg:flex-row-reverse justify-around items-center my-5 ">
+          <div class="font-p text-center mb-3">N'hésitez pas à
+              contacter
+              le site <a href="https://le-refuge.org" class="text-blue-royal"> le refuge</a>, ou vous serez
+              bien accueilli et en sécurité.
+          </div>
+
+
+          <img class="w-64 min-w-[200px]" src="/assets/img/le-refuge.jpg" alt="le refuge">
+
+      </div>
+
+
+
+      <div class="flex flex-col lg:flex-row justify-around items-center my-5 ">
+          <div class="font-p text-center mb-3 ">Il existe une large gamme de <a
+                  href="https://blog.lireka.com/livres-lgbt/" class="text-blue-royal">Livres</a> qui traitent
+              du sujet LGBTQIA+, de tout âge et avec la plus grande bienveillance.
+          </div>
+          <img class="w-64 min-w-[200px]" src="/assets/img/livrebd.png" alt="livre">
+      </div>
+
+
+      <div class="flex flex-col lg:flex-row-reverse justify-around items-center my-5 ">
+          <div class="font-p text-center mb-3">Ici vous trouverez des<a
+                  href="https://lgbt-first.com/blogs/recherche/musique-lgbt" class="text-blue-royal">&nbsp
+                  artistes</a> qui sont dans l'air du temp et des plus anciens qui ont mis en avant leurs
+              identités.
+          </div>
+          <img class="w-64 min-w-[200px]" src="/assets/1.png" alt="Artistes">
+      </div>
+  </div></section>
+    <section data-aos="fade-left" class="bloc border-philippine-violet" id="contact"><div class="border-philippine-violet">
+      <h2 class="text-philippine-violet">Contactez nous</h2>
+      <p>
+        Pour plus de renseignement contactez nous ! Nous vous repondrons dans les
+        plus bref délais
+      </p>
+      <form
+        name="Contact"
+        method="POST"
+        data-netlify="true"
+        class="flex flex-col"
+        action="/modal_contact"
+        netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="subject" value="Nouvelle demande de Contact :" />
+        <div class="flex flex-col md:flex-row md:justify-between my-2">
+          <label class="my-2" for="name">Nom </label
+          ><input name="Nom" class="input w-4/6" type="text" required />
+        </div>
+        <div class="flex flex-col md:flex-row md:justify-between my-2">
+          <label class="my-2" for="mail">E-mail </label
+          ><input name="E-mail" class="input w-4/6" type="mail" required />
+        </div>
+        <div class="flex flex-col md:flex-row md:justify-between my-2">
+          <label class="my-2" for="phone">Téléphone </label
+          ><input name="Téléphone" class="input w-4/6" type="phone" />
+        </div>
+        <div class="flex flex-col md:flex-row md:justify-between my-2">
+          <label class="my-2" for="mesage">Message </label>
+          <input name="Message" class="input w-4/6" type="text-area" rows="50" required />
+        </div>
+        <div class="flex justify-center mt-4">
+          <input
+            class="bouton text-philippine-violet hover:text-white border-philippine-violet hover:bg-philippine-violet"
+            type="submit"
+            value="Envoyer"
+          />
+        </div>
+      </form>
+    </div>
+    </section>
+    <footer data-aos="fade-up" id="footer"><div class="flex flex-col sm:flex-row justify-between mx-5 md:mx-20 content-center items-center">
+      <div class="flex flex-col">
+        <div>Le Café Coloré</div>
+        <address>37 Grande Rue - 25000 Besançon</address>
+    
+        <div>03 81 87 00 00 - contact@lcc.fr</div>
+      </div>
+      <img class="logo w-2/12" src="/assets/img/logo_lcc.png" alt="tasse de café" />
+      <p class="text-center m-2">Apprenez à vous découvrir autour d’un café.</p>
+    </div>
+    <div class="flex flex-col md:flex-row px-5 justify-between mx-5 md:mx-20 md:my-3 gap-4 items-center text-center">
+      <div>Copyright © 2023 Le Café Coloré</div>
+    
+      <div>Tous droits réservés</div>
+    
+      <div><a href="">Mentions légales</a></div>
+    
+      <div class="flex flex-col lg:flex-row items-center">
+        &nbsp Réalisation &nbsp
+    
+        <img
+          class=""
+          src="/assets/Logo_complet_HTML_noir (2).svg"
+          alt="logo-de-notre-agence"
+        />
+      </div>
+    </div>
+    </footer>
+    <section id="donation"><button
+      id="btn_don"
+      class="fixed bottom-12 right-10 flex flex-row items-center lg:bg-gray-50 rounded-xl lg:p-2 bg-gray-50 border border-gray-800 p-5 lg:border-0 hover:text-gray-50 hover:bg-[linear-gradient(to_right,#FF0018,#FFA52C,#FACC15,#008018,#0000F9,#86007D)] cursor-pointer"
+    >
+      <p class="mr-2 font-bold">Soutenez nous</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M4 21h9.62a3.995 3.995 0 0 0 3.037-1.397l5.102-5.952a1 1 0 0 0-.442-1.6l-1.968-.656a3.043 3.043 0 0 0-2.823.503l-3.185 2.547l-.617-1.235A3.98 3.98 0 0 0 9.146 11H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h5.146c.763 0 1.448.423 1.789 1.105l.447.895H7v2h6.014a.996.996 0 0 0 .442-.11l.003-.001l.004-.002h.003l.002-.001h.004l.001-.001c.009.003.003-.001.003-.001c.01 0 .002-.001.002-.001h.001l.002-.001l.003-.001l.002-.001l.002-.001l.003-.001l.002-.001c.003 0 .001-.001.002-.001l.003-.002l.002-.001l.002-.001l.003-.001l.002-.001h.001l.002-.001h.001l.002-.001l.002-.001c.009-.001.003-.001.003-.001l.002-.001a.915.915 0 0 0 .11-.078l4.146-3.317c.262-.208.623-.273.94-.167l.557.186l-4.133 4.823a2.029 2.029 0 0 1-1.52.688H4v-6zM16 2h-.017c-.163.002-1.006.039-1.983.705c-.951-.648-1.774-.7-1.968-.704L12.002 2h-.004c-.801 0-1.555.313-2.119.878C9.313 3.445 9 4.198 9 5s.313 1.555.861 2.104l3.414 3.586a1.006 1.006 0 0 0 1.45-.001l3.396-3.568C18.688 6.555 19 5.802 19 5s-.313-1.555-.878-2.121A2.978 2.978 0 0 0 16.002 2H16zm1 3c0 .267-.104.518-.311.725L14 8.55l-2.707-2.843C11.104 5.518 11 5.267 11 5s.104-.518.294-.708A.977.977 0 0 1 11.979 4c.025.001.502.032 1.067.485c.081.065.163.139.247.222l.707.707l.707-.707c.084-.083.166-.157.247-.222c.529-.425.976-.478 1.052-.484a.987.987 0 0 1 .701.292c.189.189.293.44.293.707z"
+        />
+      </svg>
+    </button>
+  
+  
+    <!-- Popup d'inscription -->
+    <div id="don-popup" class="">
+          <div id="modalDon"
+        class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400"
+      >
+        <div
+          class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+        >
+          <div class="fixed inset-0 transition-opacity">
+            <div class="absolute inset-0 bg-gray-100 opacity-75"></div>
+          </div>
+  
+          <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
+  
+          <div 
+            class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl "
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-headline"
+          >
+            <div class="px-4 py-5 bg-[linear-gradient(to_right,#FF0018,#FFA52C,#FACC15,#008018,#0000F9,#86007D)] sm:px-6">
+              <h3 class="text-lg leading-6 font-bold text-center">
+               Aidez nous a aides les membres de la comuneauté
+              </h3>
+            </div>
+              <div>
+            <p class="my-5 mx-44 text-center">Soutenez nous financierement pour pereniser les actions de notre association</p>
+              </div>
+              <div class="flex justify-center mb-5"><a href="https://donate.stripe.com/test_fZe4gHgkP8GZ6fC144?locale=fr"><button class="bouton bg-[linear-gradient(to_right,#FF0018,#FFA52C,#FACC15,#008018,#0000F9,#86007D)] flex justify-center items-center">Faire un don</button></a>
+              </div>
+          </div>
+        </div>
+      </div></section>
     
     <script>
       AOS.init();

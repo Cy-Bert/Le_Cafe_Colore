@@ -23,9 +23,8 @@
     @apply font-p border text-white font-bold rounded-2xl w-32 h-10;
   }
   .input {
-    @apply border shadow rounded;
+    @apply border shadow rounded focus:outline-none;
   }
-  /*focus:outline-none */
   .image {
     @apply shadow-lg;
   }
