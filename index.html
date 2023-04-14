@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>En cours de développement</title>
-    <link rel="stylesheet" href="/dist/output.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le café coloré</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script defer src="/src/script.js"></script>
+    <script defer src="src/nav_bar.js"></script>
+    <script defer src="src/rencontre.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/IconoirCoffeeCup.svg"
+      type="image/x-icon"
+    />
+  </head>
+   <body id="body" class=" bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] bg-no-repeat">
+    <header data-aos="fade-down" id="header"></header>
+    <section data-aos="fade-right" class="bloc border-vivid-red" id="intro"></section>
+    <section data-aos="fade-left" class="bloc border-deep-saffron" id="rencontre"></section>
+    <section data-aos="fade-right" class="bloc border-vivid-yellow" id="lexique"></section>
+    <section data-aos="fade-left" class="bloc border-ao" id="interview"></section>
+    <section data-aos="fade-right" class="bloc border-blue-royal" id="allerplusloin"></section>
+    <section data-aos="fade-left" class="bloc border-philippine-violet" id="contact"></section>
+    <footer data-aos="fade-up" id="footer"></footer>
+    <section id="donation"></section>
     
-</body>
+    <script>
+      AOS.init();
+    </script>
+    </body>
 </html>
