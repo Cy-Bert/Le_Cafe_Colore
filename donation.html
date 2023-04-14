@@ -1,6 +1,7 @@
 <head>
   <link rel="stylesheet" href="/dist/output.css" />
   <script defer src="/src/don.js"></script>
+  <script defer src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
   <button
@@ -37,7 +38,7 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
 
         <div 
-          class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl"
+          class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl "
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-headline"
@@ -50,7 +51,8 @@
             <div>
           <p class="my-5 mx-44 text-center">Soutenez nous financierement pour pereniser les actions de notre association</p>
             </div>
-          
+            <div class="flex justify-center mb-5"><a href="https://donate.stripe.com/test_fZe4gHgkP8GZ6fC144?locale=fr"><button class="bouton bg-[linear-gradient(to_right,#FF0018,#FFA52C,#FACC15,#008018,#0000F9,#86007D)] flex justify-center items-center">Faire un don</button></a>
+            </div>
         </div>
       </div>
     </div>
