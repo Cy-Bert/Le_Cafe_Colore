@@ -53,19 +53,23 @@
           aria-labelledby="modal-headline"
         >
           <div
-            class="px-4 py-5 bg-gradient-to-r from-rose-600 via-rose-400 to-rose-500 sm:px-6"
+            class="px-4 py-5 bg-deep-saffron sm:px-6"
           >
-            <h3 class="text-lg font-medium leading-6 text-white text-center">
+            <h3 class="text-lg leading-6 font-bold text-center">
               S'inscrire à une rencontre
             </h3>
           </div>
 
-          <div class="px-4 pt-5 pb-4 bg-white sm:p-6 sm:pb-4">
+
             <form
-              method="post"
-              action="mailto:admin@test.com"
-              enctype="text/plain"
+            name="Rencontre"
+            method="POST"
+            data-netlify="true"
+            class="flex flex-col items-center"
+            action="/modal_rencontre"
+            netlify-honeypot="bot-field"
             >
+            <input type="hidden" name="subject" value="Nouvelle inscription a une rencontre :" />
               <div class="mb-4">
                 <label class="block text-gray-700 font-bold mb-2" for="nom">
                   Nom
@@ -87,7 +91,7 @@
                   id="email"
                   type="email"
                   placeholder="Votre email"
-                  name="Email"
+                  name="E-mail"
                 />
               </div>
               <div class="mb-4">
@@ -112,7 +116,7 @@
                 Envoyer
               </button>
             </form>
-          </div>
+    
         </div>
       </div>
     </div>
