@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  let button = document.getElementById('unicornRain');
-  let container = document.getElementById('unicornContainer');
+  let button = document.querySelector('#unicornRain');
+  let container = document.querySelector('#unicornContainer');
 
   function launchRain() {
     for (let i = 0; i < 200; i++) {
