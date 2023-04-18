@@ -1,12 +1,7 @@
-<head>
-  <link rel="stylesheet" href="/dist/output.css" />
-  <script defer src="/src/don.js"></script>
-  <script defer src="https://js.stripe.com/v3/"></script>
-</head>
 <body>
   <button
     id="btn_don"
-    class="fixed bottom-12 right-10 flex flex-row items-center lg:bg-gray-50 rounded-xl lg:p-2 bg-gray-50 border border-gray-800 p-5 lg:border-0 hover:text-gray-50 hover:bg-[linear-gradient(to_right,#FF0018,#FFA52C,#FACC15,#008018,#0000F9,#86007D)] cursor-pointer"
+    class="fixed bottom-2 right-2 flex flex-row items-center lg:bg-gray-50 rounded-xl lg:p-2 bg-gray-50 border border-gray-800 p-5 lg:border-0 hover:text-gray-50 hover:bg-[linear-gradient(to_right,#FF0018,#FFA52C,#FACC15,#008018,#0000F9,#86007D)] cursor-pointer"
   >
     <p class="mr-2 font-bold">Soutiens nous</p>
     <svg
@@ -22,10 +17,10 @@
     </svg>
   </button>
 
-
   <!-- Popup d'inscription -->
-  <div id="don-popup" class="">
-        <div id="modalDon"
+  <div id="don-popup" class="hidden">
+    <div
+      id="modalDon"
       class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400"
     >
       <div
@@ -37,24 +32,63 @@
 
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
 
-        <div 
-          class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl "
+        <div
+          class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl rounded-2xl"
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-headline"
         >
-          <div class="px-4 py-5 bg-[linear-gradient(to_right,#FF0018,#FFA52C,#FACC15,#008018,#0000F9,#86007D)] sm:px-6">
+          <div
+            class="px-4 py-5 bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)]  flex justify-between items-center sm:px-6"
+          >
+            <div>&nbsp;</div>
             <h3 class="text-lg leading-6 font-bold text-center">
               Les membres de la communauté ont besoin de ton aide
             </h3>
+            <div class="cursor-pointer hover:scale-150">
+              <a id="closeCross">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m17.705 7.705l-1.41-1.41L12 10.59L7.705 6.295l-1.41 1.41L10.59 12l-4.295 4.295l1.41 1.41L12 13.41l4.295 4.295l1.41-1.41L13.41 12l4.295-4.295z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
+          <div>
+            <p class="my-5 mx-44 text-center">
+              Si tu souhaites nous aider financièrement pour construire les
+              futures actions de l'association.
+            </p>
+          </div>
+          <div class="flex items-center justify-center mb-5">
+            <div class="flex justify-center">
+              <a
+                href="https://donate.stripe.com/test_fZe4gHgkP8GZ6fC144?locale=fr"
+                ><button
+                  class="bouton mx-4 hover:bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] text-black  border-black hover:border-white  flex justify-center items-center"
+                >
+                  Faire un don
+                </button></a
+              >
+            </div>
             <div>
-          <p class="my-5 mx-44 text-center">Si tu souhaites nous aider financièrement pour construire les futures actions de l'association.</p>
+              <a
+                id="closeForm"
+                class="bouton mx-4 hover:bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] text-black  border-black hover:border-white  flex justify-center items-center"
+              >
+                Annuler
+              </a>
             </div>
-            <div class="flex justify-center mb-5"><a href="https://donate.stripe.com/test_fZe4gHgkP8GZ6fC144?locale=fr"><button class="bouton bg-[linear-gradient(to_right,#FF0018,#FFA52C,#FACC15,#008018,#0000F9,#86007D)] flex justify-center items-center">Faire un don</button></a>
-            </div>
+          </div>
         </div>
       </div>
     </div>
- 
+  </div>
 </body>
