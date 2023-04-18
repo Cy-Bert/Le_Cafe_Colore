@@ -7,7 +7,7 @@ for (let i = 0; i < listChildren.length; i++) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
       if (this.readyState === 4 && this.status === 200) {
-        document.getElementById(listChildren[i].id).innerHTML =
+        document.querySelector(`#${listChildren[i].id}`).innerHTML =
           xhr.responseText;
       }
     };
