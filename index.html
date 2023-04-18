@@ -8,14 +8,72 @@
   <title>Le café coloré</title>
   <link rel="stylesheet" href="/dist/output.css" />
   <script defer src="/src/script.js"></script>
-  <!-- <script defer src="src/nav_bar.js"></script> -->
+  <script defer src="src/nav_bar.js"></script>
   <link rel="shortcut icon" href="/assets/icons/IconoirCoffeeCup.svg" type="image/x-icon" />
 </head>
 
-<body id="body"
-  class=" bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] bg-no-repeat">
+<body id="body">
 
-   
+  <header class="sticky -top-44 bg-center bg-no-repeat bg-cover" style="background-image: url(/assets/img/bg_header.jpg)">
+    <div class="flex flex-row items-center text-white "
+      >
+      <div class="flex font-p font-semibold hidden lg:block lg:ml-10">
+        37 Grande Rue <br>
+        25000 BESANCON <br>
+        03 81 87 00 00 <br>
+        contact@lcc.fr
+      </div>
+      <img class="lg:ml-48 pb-2" src="assets/img/logo_lcc.png"
+        alt="Le logo de l'association représente une tasse de café avec les couleurs du drapeau">
+      <div class="grow">
+        <h1 class="lg:block uppercase lg:mt-16">Le café coloré</h1>
+        <nav id="navBar" class="">
+
+          <button id="navToggle" class=" border-white border-4 rounded-md fixed top-4 right-4 lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+            </svg>
+          </button>
+
+          <div id="navContent"
+            class=" bg-slate-700 lg:mt-20 lg:bg-transparent uppercase font-semibold font-p flex flex-col md:gap-8 gap-4 lg:flex-row fixed lg:relative lg:top-0 lg:right-0 top-16 right-4">
+            <a class="px-6 md:px-0 py-2" href="#intro"><span class="link-underline link-underline-black text-white pb-2">Accueil</span> 
+            </a>
+            <style>
+              .link-underline {
+                border-bottom-width: 0;
+                background-image:transparent;
+                background-size: 0 3px;
+                background-position: 0 100%;
+                background-repeat: no-repeat;
+                transition: background-size .5s ease-in-out;
+              }
+            
+              .link-underline-black {
+                background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
+              }
+            
+              .link-underline:hover {
+                background-size: 100% 3px;
+                background-position: 0 100%
+              }
+            </style>
+            <a class="px-6 md:px-0 py-2" href="#rencontre"><span class="hover:border-b-white hover:border-b-4">Rencontres</span> 
+            </a>
+            <a class="px-6 md:px-0 py-2" href="#lexique"><span class="hover:border-b-white hover:border-b-4">Lexique</span>
+            </a>
+            <a class="px-6 md:px-0 py-2" href="#interview"><span class="hover:border-b-white hover:border-b-4">Interview</span>
+            </a>
+            <a class="px-6 md:px-0 py-2" href="#allerplusloin"><span class="hover:border-b-white hover:border-b-4">Aller + loin</span>
+            </a>
+            <a class="px-6 md:px-0 py-2" href="#contact"><span class="hover:border-b-white hover:border-b-4">Contact</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+  </header>
   <section class="bloc border-vivid-red" id="intro"></section>
   <section class="bloc border-deep-saffron" id="rencontre"></section>
   <section class="bloc border-vivid-yellow" id="lexique"></section>
