@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>En cours de développement</title>
-    <link rel="stylesheet" href="/dist/output.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le café coloré</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script defer src="/src/script.js"></script>
+    <script defer src="src/nav_bar.js"></script>
+    <script defer src="src/rencontre.js"></script>
+    <script
+            src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/IconoirCoffeeCup.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body id="body" >
+    <header data-aos="fade-down" id="header""></header>
+   <main  id="main" class="overflow-x-hidden bg-[url('/assets/img/katie-rainbow-pR4DpgehNow-unsplash.jpg')] bg-cover" >
+ 
+      <section
+        data-aos="slide-right"
+        class="bloc rellax   border-vivid-red"
+        id="intro"
+        data-rellax-speed="1"
+        ></section>
+      <section
+        data-aos="slide-left"
+        class="bloc rellax   border-deep-saffron"
+        id="rencontre"
+        data-rellax-speed="1"
+      ></section>
+      <section
+        data-aos="slide-right"
+        class="bloc rellax   border-vivid-yellow"
+        id="lexique"
+        data-rellax-speed="1"
+      ></section>
+      <section
+        data-aos="slide-left"
+        class="bloc rellax   border-ao"
+        id="interview"
+        data-rellax-speed="1"
+      ></section>
+      <section
+        data-aos="slide-right"
+        class="bloc rellax   border-blue-royal"
+        id="allerplusloin"
+        data-rellax-speed="1"
+      ></section>
+      <section
+        data-aos="slide-left"
+        class="bloc rellax   border-philippine-violet"
+        id="contact"
+        data-rellax-speed="1"
+      ></section>
+      </main>
+    <footer data-aos="fade-up"  id="footer"></footer>
+    <section id="donation"></section>
+    <script>
+      // Accepts any class name
+      var rellax = new Rellax('.rellax');
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

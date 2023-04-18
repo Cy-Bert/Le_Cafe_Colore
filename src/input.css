@@ -7,25 +7,26 @@
     @apply font-h1 text-3xl font-bold;
   }
   h2 {
-    @apply font-h2 text-xl py-5 font-bold;
+    @apply  text-3xl font-h2 py-5 font-bold text-center;
   }
   p {
     @apply font-p;
   }
-  section {
-    @apply m-10 border-4 p-5 rounded-lg bg-[#fafafa] shadow-2xl;
-  }
+  
 }
 
 @layer components {
+  .bloc {
+    @apply mx-5 my-20 md:mx-20 border-4 p-2 md:p-7 rounded-2xl bg-[#fafafa] shadow-2xl;
+  }
   .bouton {
     @apply font-p border text-white font-bold rounded-2xl w-32 h-10;
   }
   .input {
-    @apply border shadow rounded;
+    @apply border shadow rounded focus:outline-none;
   }
+
   .image {
     @apply shadow-lg;
   }
 }
-
