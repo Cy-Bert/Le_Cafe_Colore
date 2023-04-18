@@ -19,9 +19,9 @@
   </div>
 
   <!-- Popup d'inscription -->
-  <div id="inscription-popup" class="hidden">
-    <div class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400">
-      <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+  <div id="inscription-popup" class="">
+    <div class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400 ">
+      <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0 ">
         <div class="fixed inset-0 transition-opacity">
           <div class="absolute inset-0 bg-gray-50 opacity-75"></div>
         </div>
@@ -29,7 +29,7 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
 
         <div
-          class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl"
+          class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl rounded-2xl"
           role="dialog" aria-modal="true" aria-labelledby="modal-headline">
 
 
@@ -55,23 +55,23 @@
             <form name="Rencontre" method="POST" data-netlify="true" class="flex flex-col items-center"
               action="/modal_rencontre" netlify-honeypot="bot-field">
               <input type="hidden" name="subject" value="Nouvelle inscription a une rencontre :" />
-              <div class="mb-4">
+              <div class="mb-4 flex flex-col md:flex-col">
                 <label class="block text-gray-700 font-bold mb-2" for="nom">
                   Nom
                 </label>
-                <input class="input pr-16" id="nom" type="text" placeholder="Votre nom" name="Nom" />
+                <input class="input pr-16" id="nom" type="text" name="Nom" />
               </div>
-              <div class="mb-4">
+              <div class="mb-4 flex flex-col md:flex-col">
                 <label class="block text-gray-700 font-bold mb-2" for="email">
                   Email
                 </label>
-                <input class="input pr-16" id="email" type="email" placeholder="Votre email" name="E-mail" />
+                <input class="input pr-16" id="email" type="email"  name="E-mail" />
               </div>
-              <div class="mb-4">
+              <div class="mb-10 flex flex-col md:flex-col">
                 <label class="block text-gray-700 font-bold mb-2" for="telephone">
                   Téléphone
                 </label>
-                <input class="input mb-5 pr-16 id="telephone" type="tel" placeholder="Votre téléphone" name="Téléphone" />
+                <input class="input  pr-16" id="telephone" type="tel" name="Téléphone" />
               </div>
               <div class="flex items-center ">
                 <button type="submit"
