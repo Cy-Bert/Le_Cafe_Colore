@@ -1,27 +1,21 @@
-<head>
-  <link rel="stylesheet" href="/dist/output.css">
-  <script defer src="src/rencontre.js"></script>
-</head>
-
-<body>
-  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
-    <div class="md:w-1/2 lg:w-2/3 md:pr-8 flex items-center flex-col">
-      <h2 class="text-deep-saffron md:text-3xl font-bold mb-2">Rencontres</h2>
-      <p class="mb-4 text-center">
+  <div class="flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 lg:w-2/3 flex items-center flex-col">
+      <h2 class="text-deep-saffron md:text-3xl font-bold ">Rencontres</h2>
+      <p class=" text-center">
         Rencontrez des personnes formidables de la communauté LGBTQIA+ autour d'un
         café chaud et d'une conversation chaleureuse, rejoignez-nous pour une
         expérience de rencontre inclusive et conviviale !
       </p>
-      <p class="mb-4 text-center italic" id="date"></p>
+      <p class="text-center italic" id="date"></p>
       <button id="inscription-btn"
         class="bouton text-deep-saffron border-deep-saffron hover:bg-deep-saffron hover:text-white mt-5">
         S'inscrire
       </button>
     </div>
-    <div class="md:w-1/2 lg:w-1/3 mb-4 md:mb-0 text-center flex justify-center mt-12">
+   
       <img src="/assets/img/pixel.jpg" alt="Photo de la terrasse du café Le Pixel"
-        class="w-4/6 h-auto md:h-full md:object-cover" />
-    </div>
+        class="md:w-1/2 lg:w-1/3 h-1/2 mt-6  md:mt-0 md:h-full rounded-2xl" />
+   
   </div>
 
   <!-- Popup d'inscription -->
@@ -98,4 +92,3 @@
     </div>
   </div>
 
-</body>
