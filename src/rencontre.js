@@ -1,9 +1,9 @@
 
 // Fonction pop-up pour le bouton ENVOYER l'inscription aux rencontres 
-const inscriptionBtn = document.getElementById("inscription-btn");
-const popup = document.getElementById("inscription-popup");
-const closePopup = document.getElementById("closeForm");
-const closeCross = document.getElementById("closeCross")
+const inscriptionBtn = document.querySelector("#inscription-btn");
+const popup = document.querySelector("#inscription-popup");
+const closePopup = document.querySelector("#closeForm");
+const closeCross = document.querySelector("#closeCross")
 
 inscriptionBtn.addEventListener("click", function () {
     popup.classList.remove("hidden");
@@ -38,4 +38,4 @@ function getNextWednesday() {
 
 // Afficher la date du prochain mercredi
 let nextWednesday = getNextWednesday();
-document.getElementById("date").innerHTML = "La prochaine rencontre se tiendra le " + nextWednesday.toLocaleDateString();
+document.querySelector("#date").innerHTML = "La prochaine rencontre se tiendra le " + nextWednesday.toLocaleDateString();
