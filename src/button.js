@@ -1,4 +1,3 @@
-const button = document.querySelector('#unicornRain');
 const container = document.querySelector('#unicornContainer');
 
 function launchRain() {
@@ -14,14 +13,14 @@ function launchRain() {
     img.style.position = 'absolute';
     img.style.left = Math.random() * (window.innerWidth - 100) + 'px';
     img.style.top = Math.random() * (window.innerHeight - 100) + 'px';
-    img.style.animation = 'unicorn 1s ease forwards';
+    img.style.animation = 'unicorn 10s ease forwards';
     img.style.animationDelay = Math.random() * 3 + 's';
 
     container.appendChild(img);
   }
 }
 
-button.addEventListener('click', launchRain);
+launchRain()
 
 container.addEventListener('animationend', function(event) {
   event.target.remove();
