@@ -1,145 +1,202 @@
+<div class="bg-gray-50 flex flex-col gap-4">
+  <h2 class="bg-gray-50 text-vivid-yellow text-3xl">Lexique</h2>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>En cours de développement</title>
-    <link rel="stylesheet" href="/dist/output.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"
-        integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/lexique.js" defer></script>
-</head>
+  <!-- PARTIE LESBIENNE -->
 
-<body class="bg-gray-50">
+  <div class="flex flex-row gap-4 justify-around items-center">
+    <div class="w-24 h-24 flex justify-center">
+      <canvas
+        id="canvasBasicL"
+        class="flex h-full w-full rounded-full shadow-lg z-10"
+      ></canvas>
 
-    <div class="bg-gray-50 flex flex-col gap-4">
-        <h2 class="bg-gray-50 text-vivid-yellow text-3xl">Lexique</h2>
-
-        <!-- PARTIE LESBIENNE -->
-
-        <div class="flex flex-row gap-4 justify-around items-center">
-            <div class="w-24 h-24 flex justify-center">
-
-                <canvas id="canvasBasicL" class="flex  h-full w-full rounded-full shadow-lg z-10"></canvas>
-
-                <div class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">l</div>
-
-            </div>
-            <div class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-rose-900 to-rose-300 font-p">
-                <div class="bg-gray-50 rounded-2xl py-4 px-8">L pour "lesbienne", il désigne une femme homosexuelle.
-                    C'est une femme qui aime les femmes.</div>
-            </div>
-        </div>
-
-        <!-- PARTIE GAY -->
-
-        <div class="flex flex-row gap-4 justify-around items-center">
-            <div class="w-24 h-24 flex justify-center">
-
-            <canvas id="canvasBasicG" class="flex  h-full w-full rounded-full shadow-lg z-10"></canvas>
-            
-            <div class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">g</div>
-            </div>
-            <div class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-blue-royal to-vivid-yellow font-p">
-              <div class="bg-gray-50 rounded-2xl py-4 px-8">G pour "gay", il désigne un homme homosexuel. C'est un homme qui aime les hommes.
-
-              </div>
-            </div>
-          </div>
-
-          <!-- PARTIE BISEXUEL -->
-          
-        <div class="flex flex-row gap-4 justify-around items-center">
-
-            <div class="w-24 h-24 flex justify-center">
-
-                <canvas id="canvasBasicB" class="flex  h-full w-full rounded-full shadow-lg z-10"></canvas>
-           
-                <div class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">
-                    b
-                </div>
-            </div>
-            <div class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-pink-500 to-blue-royal font-p">
-                <div class="bg-gray-50 rounded-2xl py-4 px-8">B pour "bisexuel·le", le terme désigne une personne qui
-                    aime les
-                    hommes et les femmes.
-                </div>
-            </div>
-        </div>
-
-<!-- PARTIE TRANS -->
-
-
-        <div class="flex flex-row gap-4 justify-around items-center">
-            <div class="w-24 h-24 flex justify-center">
-                <canvas id="canvasBasicT" class="flex  h-full w-full rounded-full shadow-lg z-10"></canvas>
-           <div class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">t</div>
-            </div>
-            <div class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-blue-400 to-pink-400 font-p">
-                <div class="bg-gray-50 rounded-2xl py-4 px-8">T comme "trans", le terme désigne une personne née
-                    homme ou née femme et qui ne se sent pas appartenir à son genre de naissance. C'est le contraire de
-                    cisgenre, une personne née homme ou née femme et qui se sent appartenir à son genre de naissance.
-                </div>
-            </div>
-        </div>
-
-        <!-- PARTIE QUEER -->
-
-        <div class="flex flex-row gap-4 justify-around items-center">
-
-            <div class="w-24 h-24 flex justify-center">
-                <canvas id="canvasBasicQ" class="flex  h-full w-full rounded-full shadow-lg z-10"></canvas>
-             <div class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">q</div>
-            </div>
-            <div class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-fuchsia-400 to-green-400 font-p">
-                <div class="bg-gray-50 rounded-2xl py-4 px-8">Q comme "queer", il désigne une personne qui ne se
-                    reconnait pas dans la sexualité hétérosexuelle, ou ne sent pas appartenir à un genre défini.</div>
-            </div>
-        </div>
-
-<!-- PARTIE INTERSEXE  -->
-
-        <div class="flex flex-row gap-4 justify-around items-center">
-            
-            <div class="w-24 h-24 flex justify-center">
-
-                    <canvas id="canvasBasicI" class="flex  h-full w-full rounded-full shadow-lg z-10"></canvas>
-              
-                <div class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">i</div>
-            </div>
-            <div class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-vivid-yellow to-philippine-violet font-p">
-                <div class="bg-gray-50 rounded-2xl py-4 px-8">I comme "intersexe", le terme désigne une personne
-                    née ni homme ni femme.</div>
-            </div>
-        </div>
-
-<!-- PARTIE ASEXUEL-LE -->
-
-        <div class="flex flex-row gap-4 justify-around items-center">
-            <div class="w-24 h-24 flex justify-center">
-
-                <canvas id="canvasBasicA" class="flex  h-full w-full rounded-full shadow-lg z-10"></canvas>
-                <div class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">a</div>
-            </div>
-            <div class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-philippine-violet to-gray-500 font-p">
-                <div class="bg-gray-50 rounded-2xl py-4 px-8">A comme "asexuel·le", c'est à dire une personne qui
-                    ne ressent pas ou peu d'attirance sexuelle pour une autre personne.</div>
-            </div>
-        </div>
-
-<!-- PARTIE + -->
-
-        <div class="flex flex-row gap-4 justify-around items-center">
-            <div class="w-24 h-24 flex justify-center">
-
-                <canvas id="canvasBasicLG" class="flex  h-full w-full rounded-full shadow-lg z-10"></canvas>
-                <div class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">+</div>
-            </div>
-            <div class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-cyan-500 to-deep-saffron font-p">
-                <div class="bg-gray-50 rounded-2xl py-4 px-8">Le "+" intégre toutes les sexualités non mentionnées
-                    dans l'acronyme (pansexuelle, en questionnement, ...), ainsi que les allié·es, qui sont les
-                    personnes qui luttent auprès des LGBTQIA+ contre l'homophobie.</div>
-            </div>
-        </div>
+      <div
+        class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
+      >
+        l
+      </div>
     </div>
+    <div
+      class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-rose-900 to-rose-300 font-p"
+    >
+      <div class="bg-gray-50 rounded-2xl py-4 px-8">
+        L pour "lesbienne", il désigne une femme homosexuelle. C'est une femme
+        qui aime les femmes.
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTIE GAY -->
+
+  <div class="flex flex-row gap-4 justify-around items-center">
+    <div class="w-24 h-24 flex justify-center">
+      <canvas
+        id="canvasBasicG"
+        class="flex h-full w-full rounded-full shadow-lg z-10"
+      ></canvas>
+
+      <div
+        class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
+      >
+        g
+      </div>
+    </div>
+    <div
+      class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-blue-royal to-vivid-yellow font-p"
+    >
+      <div class="bg-gray-50 rounded-2xl py-4 px-8">
+        G pour "gay", il désigne un homme homosexuel. C'est un homme qui aime
+        les hommes.
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTIE BISEXUEL -->
+
+  <div class="flex flex-row gap-4 justify-around items-center">
+    <div class="w-24 h-24 flex justify-center">
+      <canvas
+        id="canvasBasicB"
+        class="flex h-full w-full rounded-full shadow-lg z-10"
+      ></canvas>
+
+      <div
+        class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
+      >
+        b
+      </div>
+    </div>
+    <div
+      class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-pink-500 to-blue-royal font-p"
+    >
+      <div class="bg-gray-50 rounded-2xl py-4 px-8">
+        B pour "bisexuel·le", le terme désigne une personne qui aime les hommes
+        et les femmes.
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTIE TRANS -->
+
+  <div class="flex flex-row gap-4 justify-around items-center">
+    <div class="w-24 h-24 flex justify-center">
+      <canvas
+        id="canvasBasicT"
+        class="flex h-full w-full rounded-full shadow-lg z-10"
+      ></canvas>
+      <div
+        class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
+      >
+        t
+      </div>
+    </div>
+    <div
+      class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-blue-400 to-pink-400 font-p"
+    >
+      <div class="bg-gray-50 rounded-2xl py-4 px-8">
+        T comme "trans", le terme désigne une personne née homme ou née femme et
+        qui ne se sent pas appartenir à son genre de naissance. C'est le
+        contraire de cisgenre, une personne née homme ou née femme et qui se
+        sent appartenir à son genre de naissance.
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTIE QUEER -->
+
+  <div class="flex flex-row gap-4 justify-around items-center">
+    <div class="w-24 h-24 flex justify-center">
+      <canvas
+        id="canvasBasicQ"
+        class="flex h-full w-full rounded-full shadow-lg z-10"
+      ></canvas>
+      <div
+        class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
+      >
+        q
+      </div>
+    </div>
+    <div
+      class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-fuchsia-400 to-green-400 font-p"
+    >
+      <div class="bg-gray-50 rounded-2xl py-4 px-8">
+        Q comme "queer", il désigne une personne qui ne se reconnait pas dans la
+        sexualité hétérosexuelle, ou ne sent pas appartenir à un genre défini.
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTIE INTERSEXE  -->
+
+  <div class="flex flex-row gap-4 justify-around items-center">
+    <div class="w-24 h-24 flex justify-center">
+      <canvas
+        id="canvasBasicI"
+        class="flex h-full w-full rounded-full shadow-lg z-10"
+      ></canvas>
+
+      <div
+        class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
+      >
+        i
+      </div>
+    </div>
+    <div
+      class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-vivid-yellow to-philippine-violet font-p"
+    >
+      <div class="bg-gray-50 rounded-2xl py-4 px-8">
+        I comme "intersexe", le terme désigne une personne née ni homme ni
+        femme.
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTIE ASEXUEL-LE -->
+
+  <div class="flex flex-row gap-4 justify-around items-center">
+    <div class="w-24 h-24 flex justify-center">
+      <canvas
+        id="canvasBasicA"
+        class="flex h-full w-full rounded-full shadow-lg z-10"
+      ></canvas>
+      <div
+        class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
+      >
+        a
+      </div>
+    </div>
+    <div
+      class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-philippine-violet to-gray-500 font-p"
+    >
+      <div class="bg-gray-50 rounded-2xl py-4 px-8">
+        A comme "asexuel·le", c'est à dire une personne qui ne ressent pas ou
+        peu d'attirance sexuelle pour une autre personne.
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTIE + -->
+
+  <div class="flex flex-row gap-4 justify-around items-center">
+    <div class="w-24 h-24 flex justify-center">
+      <canvas
+        id="canvasBasicLG"
+        class="flex h-full w-full rounded-full shadow-lg z-10"
+      ></canvas>
+      <div
+        class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
+      >
+        +
+      </div>
+    </div>
+    <div
+      class="w-3/4 p-1.5 rounded-3xl bg-gradient-to-l from-cyan-500 to-deep-saffron font-p"
+    >
+      <div class="bg-gray-50 rounded-2xl py-4 px-8">
+        Le "+" intégre toutes les sexualités non mentionnées dans l'acronyme
+        (pansexuelle, en questionnement, ...), ainsi que les allié·es, qui sont
+        les personnes qui luttent auprès des LGBTQIA+ contre l'homophobie.
+      </div>
+    </div>
+  </div>
+</div>
