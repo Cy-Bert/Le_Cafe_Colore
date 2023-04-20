@@ -4,13 +4,13 @@
 
 @layer base {
   h1 {
-    @apply font-h1 text-3xl font-bold;
+    @apply font-h1 text-8xl font-bold;
   }
   h2 {
-    @apply  text-6xl font-h2 py-5 font-bold text-center;
+    @apply  text-4xl lg:text-6xl font-h2 py-5 font-bold text-center;
   }
   p {
-    @apply font-p lg:text-2xl;
+    @apply font-p  text-lg lg:text-2xl;
   }
   
 }
