@@ -1,136 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le café coloré</title>
-    <link rel="stylesheet" href="/dist/output.css" />
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"
-        integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="/src/script.js"></script>
-    <script defer src="src/nav_bar.js"></script>
-    <script defer src="src/rencontre.js"></script>
-    <script defer src="src/lexique.js"></script>
-    <script defer src="src/don.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="shortcut icon"
-      href="/assets/icons/IconoirCoffeeCup.svg"
-      type="image/x-icon"
-    />
-  </head>
-  <body id="body">
-    <header  id="header"class="sticky -top-44 z-50">
-      <div class="flex flex-row items-center text-white bg-center bg-no-repeat bg-cover "
-        style="background-image: url(/assets/img/bg_header.jpg)">
-        
-        <img class="lg:ml-8 pb-2" src="assets/img/logo_lcc.png"
-          alt="Le logo de l'association représente une tasse de café avec les couleurs du drapeau">
-        <div class="grow">
-          <h1 class="lg:block uppercase lg:mt-16 lg:ml-8">Le café coloré</h1>
-          <nav id="navBar" class="">
-    
-            <button id="navToggle" class=" border-white border-4 rounded-md fixed top-4 right-4 lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
-              </svg>
-            </button>
-    
-            <div id="navContent"
-              class=" bg-slate-600 uppercase rounded-2xl top-16 right-4 font-semibold px-10 py-5 font-p flex flex-col gap-5 lg:flex-row fixed lg:relative lg:top-0 lg:right-0 lg:mt-20 lg:bg-transparent">
-              <a class="px-6 md:px-0 py-2" href="#intro"><span
-                  class="link-underline link-underline-black text-white pb-2">Accueil</span>
-              </a>
-    
-              <a class="px-6 md:px-0 py-2" href="#rencontre"><span
-                  class="link-underline link-underline-black text-white pb-2">Rencontres</span>
-              </a>
-              <a class="px-6 md:px-0 py-2" href="#lexique"><span
-                  class="link-underline link-underline-black text-white pb-2">Lexique</span>
-              </a>
-              <a class="px-6 md:px-0 py-2" href="#interview"><span
-                  class="link-underline link-underline-black text-white pb-2">Interview</span>
-              </a>
-              <a class="px-6 md:px-0 py-2" href="#allerplusloin"><span 
-                class="link-underline link-underline-black text-white pb-2">Aller + loin</span>
-              </a>
-              <a class="px-6 md:px-0 py-2" href="#contact"><span
-                  class="link-underline link-underline-black text-white pb-2">Contact</span>
-              </a>
-            </div>
-          </nav>
-        </div>
-        <div class="font-p font-semibold hidden lg:block lg:mr-8">
-          37 Grande Rue <br>
-          25000 BESANCON <br>
-          03 81 87 00 00 <br>
-          contact@lcc.fr
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le café coloré</title>
+  <link rel="stylesheet" href="/dist/output.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"
+    integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="/src/script.js"></script>
+  <script defer src="src/nav_bar.js"></script>
+  <script defer src="src/rencontre.js"></script>
+  <script defer src="src/lexique.js"></script>
+  <script defer src="src/don.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" href="/assets/icons/IconoirCoffeeCup.svg" type="image/x-icon" />
+</head>
+
+<body id="body">
+
+  <header id="header">
+    <div class="flex flex-row items-center text-white bg-center bg-no-repeat bg-cover "
+      style="background-image: url(/assets/img/bg_header.jpg)">
+
+      <img class="lg:ml-8 pb-2" src="assets/img/logo_lcc.png"
+        alt="Le logo de l'association représente une tasse de café avec les couleurs du drapeau">
+      <div class="grow">
+        <h1 class="lg:block uppercase lg:mt-16 lg:ml-8">Le café coloré</h1>
       </div>
-      <style>
-        .link-underline {
-          border-bottom-width: 0;
-          background-image: transparent;
-          background-size: 0 3px;
-          background-position: 0 100%;
-          background-repeat: no-repeat;
-          transition: background-size .5s ease-in-out;
-        }
-    
-        .link-underline-black {
-          background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
-        }
-    
-        .link-underline:hover {
-          background-size: 100% 3px;
-          background-position: 0 100%
-        }
-      </style>
-    </header>
-   <main  id="main" class="overflow-x-hidden bg-[url('/assets/img/katie-rainbow-pR4DpgehNow-unsplash.jpg')] bg-cover" >
- 
-      <section
-        data-aos="fade-right"
-        class="bloc    border-vivid-red"
-        id="intro"
-        ><div>
-          <h2 class="text-vivid-red">Introduction</h2>
-        
-          <div class="flex flex-col lg:flex-row mx-10">
-            <div class="">
-              <img
-                class="w-6/12 m-auto lg:w-7/12"
-                src="assets/img/image_intro.png"
-                alt="Photographie de deux mains qui se tienne avec un reflet aux couleurs du drapeau LGBT"
-              />
-            </div>
-        
-            <div>
-              <p class="mt-10">
-                Le café coloré est une association locale loi-1901, née le 3 janvier
-                2023, elle a pour but de sensibiliser les personnes à la cause
-                LGBTQIA+.<br />
-                Son objectif premier est de t'aider, de t'orienter et de t'écouter si tu
-                es dans le doute.<br />
-                On vise en priorité la convivialité en nous réunissant autour d'un café,
-                d'un thé, ce que tu veux. Viens rencontrer des personnes... et te
-                rencontrer !
-              </p>
-            </div>
+      <div class="font-p font-semibold hidden lg:block lg:mr-8">
+        37 Grande Rue <br>
+        25000 BESANCON <br>
+        03 81 87 00 00 <br>
+        contact@lcc.fr
+      </div>
+    </div>
+  </header>
+
+  <section class="sticky top-0 z-50 lg:border-gray-300 lg:border-4">
+    <div class="bg-gray-50">
+    <nav id="navBar" class="flex justify-center">
+
+      <button id="navToggle" class=" border-white text-white border-4 px-2 py-2 rounded-md fixed top-60 right-4 lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+        </svg>
+      </button>
+
+      <div id="navContent"
+        class="bg-gray-50 border-gray-300 border-4 lg:border-none uppercase rounded-2xl top-60 right-20 font-semibold px-20 py-5 font-p flex flex-col gap-5 lg:flex-row fixed lg:relative lg:top-0 lg:right-0 lg:py-1 lg:rounded-none">
+        <a class="px-6 md:px-0 py-2" href="#intro"><span
+            class="link-underline link-underline-black lg:lg:text-black pb-2">Accueil</span>
+        </a>
+
+        <a class="px-6 md:px-0 py-2" href="#rencontre"><span
+            class="link-underline link-underline-black lg:lg:text-black pb-2">Rencontres</span>
+        </a>
+        <a class="px-6 md:px-0 py-2" href="#lexique"><span
+            class="link-underline link-underline-black lg:text-black pb-2">Lexique</span>
+        </a>
+        <a class="px-6 md:px-0 py-2" href="#interview"><span
+            class="link-underline link-underline-black lg:text-black pb-2">Interview</span>
+        </a>
+        <a class="px-6 md:px-0 py-2" href="#allerplusloin"><span
+            class="link-underline link-underline-black lg:text-black pb-2">Aller + loin</span>
+        </a>
+        <a class="px-6 md:px-0 py-2" href="#contact"><span
+            class="link-underline link-underline-black lg:text-black pb-2">Contact</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <style>
+    .link-underline {
+      border-bottom-width: 0;
+      background-image: transparent;
+      background-size: 0 3px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size .5s ease-in-out;
+    }
+
+    .link-underline-black {
+      background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0))
+    }
+
+    .link-underline:hover {
+      background-size: 100% 3px;
+      background-position: 0 100%
+    }
+  </style>
+  </section>
+
+  <main id="main" class="overflow-x-hidden bg-[url('/assets/img/katie-rainbow-pR4DpgehNow-unsplash.jpg')] bg-cover">
+
+    <section data-aos="fade-right" class="bloc    border-vivid-red" id="intro">
+      <div>
+        <h2 class="text-vivid-red">Introduction</h2>
+
+        <div class="flex flex-col lg:flex-row mx-10">
+          <div class="">
+            <img class="w-6/12 m-auto lg:w-7/12" src="assets/img/image_intro.png"
+              alt="Photographie de deux mains qui se tienne avec un reflet aux couleurs du drapeau LGBT" />
+          </div>
+
+          <div>
+            <p class="mt-10">
+              Le café coloré est une association locale loi-1901, née le 3 janvier
+              2023, elle à pour but de sensibiliser les personnes à la cause
+              LGBTQIA+.<br />
+              Son objectif premier est de t'aider, de t'orienter et de t'écouter si tu
+              es dans le doute.<br />
+              On vise en priorité la convivialité en nous réunissant autour d'un café,
+              d'un thé, ce que tu veux. Viens rencontrer des personnes... et te
+              rencontrer !
+            </p>
           </div>
         </div>
-        </section>
-      <section
-        data-aos="fade-left"
-        class="bloc    border-deep-saffron"
-        id="rencontre"
-      ><h2 class="text-deep-saffron font-bold">Rencontres</h2>
+      </div>
+    </section>
+    <section data-aos="fade-left" class="bloc    border-deep-saffron" id="rencontre">
+      <h2 class="text-deep-saffron md:text-3xl font-bold">Rencontres</h2>
       <div class="flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 lg:w-2/3 flex items-center flex-col">
-          
+
           <p class="text-center">
             Rencontrez des personnes formidables de la communauté LGBTQIA+ autour d'un
             café chaud et d'une conversation chaleureuse, rejoignez-nous pour une
@@ -145,37 +142,25 @@
           
           </button>
         </div>
-      
-        <img
-          src="/assets/img/pixel.jpg"
-          alt="Photo de la terrasse du café Le Pixel"
-          class="w-48 md:w-1/2 lg:w-96 lg:ml-32 mt-6 md:ml-8 rounded-2xl"
-        />
+
+        <img src="/assets/img/pixel.jpg" alt="Photo de la terrasse du café Le Pixel"
+          class="w-48 md:w-1/2 lg:w-96 lg:ml-32 mt-6 md:ml-8 rounded-2xl" />
       </div>
-      
+
       <!-- Popup d'inscription -->
       <div id="inscription-popup" class="hidden">
-        <div
-          class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400"
-        >
-          <div
-            class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
-          >
+        <div class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400">
+          <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
             <div class="fixed inset-0 transition-opacity">
               <div class="absolute inset-0 bg-gray-50 opacity-75"></div>
             </div>
-      
+
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
-      
+
             <div
               class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl rounded-2xl"
-              role="dialog"
-              aria-modal="true"
-              aria-labelledby="modal-headline"
-            >
-              <div
-                class="px-4 py-5 bg-deep-saffron sm:px-6 flex justify-between items-center"
-              >
+              role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+              <div class="px-4 py-5 bg-deep-saffron sm:px-6 flex justify-between items-center">
                 <div>&nbsp;</div>
                 <div class="">
                   <h3 class="text-lg leading-6 font-bold">
@@ -184,37 +169,20 @@
                 </div>
                 <div class="cursor-pointer hover:scale-150">
                   <a id="closeCross">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="m17.705 7.705l-1.41-1.41L12 10.59L7.705 6.295l-1.41 1.41L10.59 12l-4.295 4.295l1.41 1.41L12 13.41l4.295 4.295l1.41-1.41L13.41 12l4.295-4.295z"
-                      />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="m17.705 7.705l-1.41-1.41L12 10.59L7.705 6.295l-1.41 1.41L10.59 12l-4.295 4.295l1.41 1.41L12 13.41l4.295 4.295l1.41-1.41L13.41 12l4.295-4.295z" />
                     </svg>
                   </a>
                 </div>
               </div>
-      
+
               <div class="m-8">
-                <form
-                  name="Rencontre"
-                  method="POST"
-                  data-netlify="true"
-                  class="flex flex-col items-center"
-                  action="/modal_rencontre"
-                  netlify-honeypot="bot-field"
-                >
+                <form name="Rencontre" method="POST" data-netlify="true" class="flex flex-col items-center"
+                  action="/modal_rencontre" netlify-honeypot="bot-field">
                   <div class="w-full flex flex-col items-center justify-center">
-                    <input
-                      type="hidden"
-                      name="subject"
-                      value="Nouvelle inscription a une rencontre :"
-                    />
-      
+                    <input type="hidden" name="subject" value="Nouvelle inscription a une rencontre :" />
+
                     <div class="mb-4 flex flex-col md:flex-row justify-between w-full mx-5">
                       <label class="block text-gray-700 font-bold mb-2" for="nom">
                         Nom
@@ -225,29 +193,16 @@
                       <label class="block text-gray-700 font-bold mb-2" for="email">
                         Email
                       </label>
-                      <input
-                        class="input md:w-2/3"
-                        id="email"
-                        type="email"
-                        name="E-mail"
-                      />
+                      <input class="input md:w-2/3" id="email" type="email" name="E-mail" />
                     </div>
                     <div class="mb-10 flex flex-col md:flex-row justify-between w-full mx-5">
-                      <label
-                        class="block text-gray-700 font-bold mb-2"
-                        for="telephone"
-                      >
+                      <label class="block text-gray-700 font-bold mb-2" for="telephone">
                         Téléphone
                       </label>
-                      <input
-                        class="input md:w-2/3"
-                        id="telephone"
-                        type="tel"
-                        name="Téléphone"
-                      />
+                      <input class="input md:w-2/3" id="telephone" type="tel" name="Téléphone" />
                     </div>
                   </div>
-      
+
                   <div class="flex items-center">
                     <button
                       type="submit"
@@ -280,14 +235,11 @@
         <h2 class="bg-gray-50 text-vivid-yellow">Lexique</h2>
       
         <!-- PARTIE LESBIENNE -->
-      
+
         <div class="flex flex-row gap-4 justify-around items-center">
           <div class="w-24 h-24 flex justify-center">
-            <canvas
-              id="canvasBasicL"
-              class="flex h-full w-full rounded-full shadow-lg z-10"
-            ></canvas>
-      
+            <canvas id="canvasBasicL" class="flex h-full w-full rounded-full shadow-lg z-10"></canvas>
+
             <div
               class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 rotate-12 absolute z-40"
             >
@@ -303,19 +255,15 @@
             </div>
           </div>
         </div>
-      
+
         <!-- PARTIE GAY -->
-      
+
         <div class="flex flex-row gap-4 justify-around items-center">
           <div class="w-24 h-24 flex justify-center">
-            <canvas
-              id="canvasBasicG"
-              class="flex h-full w-full rounded-full shadow-lg z-10"
-            ></canvas>
-      
+            <canvas id="canvasBasicG" class="flex h-full w-full rounded-full shadow-lg z-10"></canvas>
+
             <div
-              class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
-            >
+              class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">
               g
             </div>
           </div>
@@ -328,16 +276,13 @@
             </div>
           </div>
         </div>
-      
+
         <!-- PARTIE BISEXUEL -->
-      
+
         <div class="flex flex-row gap-4 justify-around items-center">
           <div class="w-24 h-24 flex justify-center">
-            <canvas
-              id="canvasBasicB"
-              class="flex h-full w-full rounded-full shadow-lg z-10"
-            ></canvas>
-      
+            <canvas id="canvasBasicB" class="flex h-full w-full rounded-full shadow-lg z-10"></canvas>
+
             <div
               class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 rotate-12 absolute z-40"
             >
@@ -353,18 +298,14 @@
             </div>
           </div>
         </div>
-      
+
         <!-- PARTIE TRANS -->
-      
+
         <div class="flex flex-row gap-4 justify-around items-center">
           <div class="w-24 h-24 flex justify-center">
-            <canvas
-              id="canvasBasicT"
-              class="flex h-full w-full rounded-full shadow-lg z-10"
-            ></canvas>
+            <canvas id="canvasBasicT" class="flex h-full w-full rounded-full shadow-lg z-10"></canvas>
             <div
-              class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
-            >
+              class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">
               t
             </div>
           </div>
@@ -379,15 +320,12 @@
             </div>
           </div>
         </div>
-      
+
         <!-- PARTIE QUEER -->
-      
+
         <div class="flex flex-row gap-4 justify-around items-center">
           <div class="w-24 h-24 flex justify-center">
-            <canvas
-              id="canvasBasicQ"
-              class="flex h-full w-full rounded-full shadow-lg z-10"
-            ></canvas>
+            <canvas id="canvasBasicQ" class="flex h-full w-full rounded-full shadow-lg z-10"></canvas>
             <div
               class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 rotate-12 absolute z-40"
             >
@@ -403,16 +341,13 @@
             </div>
           </div>
         </div>
-      
+
         <!-- PARTIE INTERSEXE  -->
-      
+
         <div class="flex flex-row gap-4 justify-around items-center">
           <div class="w-24 h-24 flex justify-center">
-            <canvas
-              id="canvasBasicI"
-              class="flex h-full w-full rounded-full shadow-lg z-10"
-            ></canvas>
-      
+            <canvas id="canvasBasicI" class="flex h-full w-full rounded-full shadow-lg z-10"></canvas>
+
             <div
               class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 rotate-12 absolute z-40"
             >
@@ -428,18 +363,14 @@
             </div>
           </div>
         </div>
-      
+
         <!-- PARTIE ASEXUEL-LE -->
-      
+
         <div class="flex flex-row gap-4 justify-around items-center">
           <div class="w-24 h-24 flex justify-center">
-            <canvas
-              id="canvasBasicA"
-              class="flex h-full w-full rounded-full shadow-lg z-10"
-            ></canvas>
+            <canvas id="canvasBasicA" class="flex h-full w-full rounded-full shadow-lg z-10"></canvas>
             <div
-              class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40"
-            >
+              class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 -rotate-12 absolute z-40">
               a
             </div>
           </div>
@@ -452,15 +383,12 @@
             </div>
           </div>
         </div>
-      
+
         <!-- PARTIE + -->
-      
+
         <div class="flex flex-row gap-4 justify-around items-center">
           <div class="w-24 h-24 flex justify-center">
-            <canvas
-              id="canvasBasicLG"
-              class="flex h-full w-full rounded-full shadow-lg z-10"
-            ></canvas>
+            <canvas id="canvasBasicLG" class="flex h-full w-full rounded-full shadow-lg z-10"></canvas>
             <div
               class="text-white uppercase w-24 h-24 flex items-center justify-center font-bold text-6xl transform -mt-1 rotate-12 absolute z-40"
             >
@@ -478,12 +406,9 @@
           </div>
         </div>
       </div>
-      </section>
-      <section
-        data-aos="fade-left"
-        class="bloc    border-ao"
-        id="interview"
-      ><div class="flex flex-col gap-4 pb-6">
+    </section>
+    <section data-aos="fade-left" class="bloc    border-ao" id="interview">
+      <div class="flex flex-col gap-4 pb-6">
         <h2 class="text-ao">Interview</h2>
         <div class="flex flex-col lg:flex-row justify-around items-center">
           <div class="p-2 lg:w-3/4">
@@ -527,12 +452,9 @@
           </div>
         </div>
       </div>
-      </section>
-      <section
-        data-aos="fade-right"
-        class="bloc    border-blue-royal"
-        id="allerplusloin"
-      >    <div class="flex flex-col">
+    </section>
+    <section data-aos="fade-right" class="bloc    border-blue-royal" id="allerplusloin">
+      <div class="flex flex-col">
 
         <!-- partie ressource -->
 
@@ -584,36 +506,23 @@
           Si tu veux en savoir plus contacte l'association ! On te répondra dans les
           plus brefs délais.
         </p>
-        <form
-          name="Contact"
-          method="POST"
-          data-netlify="true"
-          class="flex flex-col"
-          action="/modal_contact"
-          netlify-honeypot="bot-field"
-        >
-          <input
-            type="hidden"
-            name="subject"
-            value="Nouvelle demande de Contact :"
-          />
+        <form name="Contact" method="POST" data-netlify="true" class="flex flex-col" action="/modal_contact"
+          netlify-honeypot="bot-field">
+          <input type="hidden" name="subject" value="Nouvelle demande de Contact :" />
           <div class="mb-4 flex flex-col md:flex-row justify-between w-full mx-5">
-            <label class="block text-gray-700 font-bold mb-2" for="name">Nom </label
-            ><input name="Nom" class="input w-2/3" type="text" required />
+            <label class="block text-gray-700 font-bold mb-2" for="name">Nom </label><input name="Nom"
+              class="input w-2/3" type="text" required />
           </div>
           <div class="mb-4 flex flex-col md:flex-row justify-between w-full mx-5">
-            <label class="block text-gray-700 font-bold mb-2" for="mail"
-              >E-mail </label
-            ><input name="E-mail" class="input w-2/3" type="mail" required />
+            <label class="block text-gray-700 font-bold mb-2" for="mail">E-mail </label><input name="E-mail"
+              class="input w-2/3" type="mail" required />
           </div>
           <div class="mb-4 flex flex-col md:flex-row justify-between w-full mx-5">
-            <label class="block text-gray-700 font-bold mb-2" for="phone"
-              >Téléphone </label
-            ><input name="Téléphone" class="input w-2/3" type="phone" />
+            <label class="block text-gray-700 font-bold mb-2" for="phone">Téléphone </label><input name="Téléphone"
+              class="input w-2/3" type="phone" />
           </div>
           <div class="mb-4 flex flex-col md:flex-row justify-between w-full mx-5">
-            <label class="block text-gray-700 font-bold mb-2" for="mesage"
-              >Message
+            <label class="block text-gray-700 font-bold mb-2" for="mesage">Message
             </label>
             <textarea
               name="Message"
@@ -639,38 +548,31 @@
           </div>
         </form>
       </div>
-    
+
     </section>
-      </main>
-    <footer data-aos="fade-up"  id="footer"><div
-      class="flex flex-col sm:flex-row justify-between mx-5 md:mx-20 content-center items-center"
-    >
+  </main>
+  <footer data-aos="fade-up" id="footer">
+    <div class="flex flex-col sm:flex-row justify-between mx-5 md:mx-20 content-center items-center">
       <div class="flex flex-col">
         <div>Le Café Coloré</div>
         <address>37 Grande Rue - 25000 Besançon</address>
-    
+
         <div>03 81 87 00 00 - contact@lcc.fr</div>
       </div>
       <img class="logo w-2/12" src="/assets/img/logo_lcc.png" alt="tasse de café" />
       <p class="text-center m-2">Apprenez à vous découvrir autour d’un café.</p>
     </div>
-    <div
-      class="flex flex-col md:flex-row px-5 justify-between mx-5 md:mx-20 md:my-3 gap-4 items-center text-center"
-    >
+    <div class="flex flex-col md:flex-row px-5 justify-between mx-5 md:mx-20 md:my-3 gap-4 items-center text-center">
       <div>Copyright © 2023 Le Café Coloré</div>
-    
+
       <div>Tous droits réservés</div>
-    
+
       <div><a href="">Mentions légales</a></div>
-    
+
       <div class="flex flex-col lg:flex-row items-center">
         Réalisation &nbsp
-    
-        <img
-          class=""
-          src="/assets/img/Logo_complet_HTML_noir (2).svg"
-          alt="logo-de-notre-agence"
-        />
+
+        <img class="" src="/assets/img/Logo_complet_HTML_noir (2).svg" alt="logo-de-notre-agence" />
       </div>
       <div>&nbsp</div>
     </div>
@@ -680,59 +582,36 @@
       class="bouton text-black fixed bottom-2 right-2 flex flex-row items-center rounded-xl  bg-gray-50 hover:border-0 border-gray-800    hover:bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] cursor-pointer"
     >
       <p class="mr-2 font-bold">Soutiens nous</p>
-      <svg 
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M4 21h9.62a3.995 3.995 0 0 0 3.037-1.397l5.102-5.952a1 1 0 0 0-.442-1.6l-1.968-.656a3.043 3.043 0 0 0-2.823.503l-3.185 2.547l-.617-1.235A3.98 3.98 0 0 0 9.146 11H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h5.146c.763 0 1.448.423 1.789 1.105l.447.895H7v2h6.014a.996.996 0 0 0 .442-.11l.003-.001l.004-.002h.003l.002-.001h.004l.001-.001c.009.003.003-.001.003-.001c.01 0 .002-.001.002-.001h.001l.002-.001l.003-.001l.002-.001l.002-.001l.003-.001l.002-.001c.003 0 .001-.001.002-.001l.003-.002l.002-.001l.002-.001l.003-.001l.002-.001h.001l.002-.001h.001l.002-.001l.002-.001c.009-.001.003-.001.003-.001l.002-.001a.915.915 0 0 0 .11-.078l4.146-3.317c.262-.208.623-.273.94-.167l.557.186l-4.133 4.823a2.029 2.029 0 0 1-1.52.688H4v-6zM16 2h-.017c-.163.002-1.006.039-1.983.705c-.951-.648-1.774-.7-1.968-.704L12.002 2h-.004c-.801 0-1.555.313-2.119.878C9.313 3.445 9 4.198 9 5s.313 1.555.861 2.104l3.414 3.586a1.006 1.006 0 0 0 1.45-.001l3.396-3.568C18.688 6.555 19 5.802 19 5s-.313-1.555-.878-2.121A2.978 2.978 0 0 0 16.002 2H16zm1 3c0 .267-.104.518-.311.725L14 8.55l-2.707-2.843C11.104 5.518 11 5.267 11 5s.104-.518.294-.708A.977.977 0 0 1 11.979 4c.025.001.502.032 1.067.485c.081.065.163.139.247.222l.707.707l.707-.707c.084-.083.166-.157.247-.222c.529-.425.976-.478 1.052-.484a.987.987 0 0 1 .701.292c.189.189.293.44.293.707z"
-        />
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M4 21h9.62a3.995 3.995 0 0 0 3.037-1.397l5.102-5.952a1 1 0 0 0-.442-1.6l-1.968-.656a3.043 3.043 0 0 0-2.823.503l-3.185 2.547l-.617-1.235A3.98 3.98 0 0 0 9.146 11H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h5.146c.763 0 1.448.423 1.789 1.105l.447.895H7v2h6.014a.996.996 0 0 0 .442-.11l.003-.001l.004-.002h.003l.002-.001h.004l.001-.001c.009.003.003-.001.003-.001c.01 0 .002-.001.002-.001h.001l.002-.001l.003-.001l.002-.001l.002-.001l.003-.001l.002-.001c.003 0 .001-.001.002-.001l.003-.002l.002-.001l.002-.001l.003-.001l.002-.001h.001l.002-.001h.001l.002-.001l.002-.001c.009-.001.003-.001.003-.001l.002-.001a.915.915 0 0 0 .11-.078l4.146-3.317c.262-.208.623-.273.94-.167l.557.186l-4.133 4.823a2.029 2.029 0 0 1-1.52.688H4v-6zM16 2h-.017c-.163.002-1.006.039-1.983.705c-.951-.648-1.774-.7-1.968-.704L12.002 2h-.004c-.801 0-1.555.313-2.119.878C9.313 3.445 9 4.198 9 5s.313 1.555.861 2.104l3.414 3.586a1.006 1.006 0 0 0 1.45-.001l3.396-3.568C18.688 6.555 19 5.802 19 5s-.313-1.555-.878-2.121A2.978 2.978 0 0 0 16.002 2H16zm1 3c0 .267-.104.518-.311.725L14 8.55l-2.707-2.843C11.104 5.518 11 5.267 11 5s.104-.518.294-.708A.977.977 0 0 1 11.979 4c.025.001.502.032 1.067.485c.081.065.163.139.247.222l.707.707l.707-.707c.084-.083.166-.157.247-.222c.529-.425.976-.478 1.052-.484a.987.987 0 0 1 .701.292c.189.189.293.44.293.707z" />
       </svg>
     </button>
-  
+
     <!-- Popup d'inscription -->
     <div id="don-popup" class="hidden">
-      <div
-        id="modalDon"
-        class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400"
-      >
-        <div
-          class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
-        >
+      <div id="modalDon" class="fixed inset-0 z-10 soverflow-y-auto transition ease-out duration-400">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
           <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-gray-100 opacity-75"></div>
           </div>
-  
+
           <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
-  
+
           <div
             class="inline-block w-full overflow-hidden text-left align-bottom transition-all transform bg-white shadow-xl sm:my-8 sm:align-middle sm:max-w-2xl rounded-2xl"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-headline"
-          >
+            role="dialog" aria-modal="true" aria-labelledby="modal-headline">
             <div
-              class="px-4 py-5 bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)]  flex justify-between items-center sm:px-6"
-            >
+              class="px-4 py-5 bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)]  flex justify-between items-center sm:px-6">
               <div>&nbsp;</div>
               <h3 class="text-lg leading-6 font-bold text-center">
                 Les membres de la communauté ont besoin de ton aide
               </h3>
               <div class="cursor-pointer hover:scale-150">
                 <a id="closeCrossDon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="m17.705 7.705l-1.41-1.41L12 10.59L7.705 6.295l-1.41 1.41L10.59 12l-4.295 4.295l1.41 1.41L12 13.41l4.295 4.295l1.41-1.41L13.41 12l4.295-4.295z"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="m17.705 7.705l-1.41-1.41L12 10.59L7.705 6.295l-1.41 1.41L10.59 12l-4.295 4.295l1.41 1.41L12 13.41l4.295 4.295l1.41-1.41L13.41 12l4.295-4.295z" />
                   </svg>
                 </a>
               </div>
@@ -745,20 +624,14 @@
             </div>
             <div class="flex items-center justify-center mb-5">
               <div class="flex justify-center">
-                <a
-                  href="https://donate.stripe.com/test_fZe4gHgkP8GZ6fC144?locale=fr"
-                  ><button 
-                    class="bouton mx-4 hover:bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] text-black  border-black hover:border-white  flex justify-center items-center"
-                  >
+                <a href="https://donate.stripe.com/test_fZe4gHgkP8GZ6fC144?locale=fr"><button
+                    class="bouton mx-4 hover:bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] lg:text-black  border-black hover:border-white  flex justify-center items-center">
                     Faire un don
-                  </button></a
-                >
+                  </button></a>
               </div>
               <div>
-                <a
-                  id="closeFormDon"
-                  class="bouton mx-4 hover:bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] text-black  border-black hover:border-white  flex justify-center items-center"
-                >
+                <a id="closeFormDon"
+                  class="bouton mx-4 hover:bg-[linear-gradient(to_bottom_right,#f282828a,#f8ad774f,#f6ca2e4a,#5c99464a,#6793d64a,#8a69b54a)] lg:text-black  border-black hover:border-white  flex justify-center items-center">
                   Annuler
                 </a>
               </div>
@@ -767,11 +640,12 @@
         </div>
       </div>
     </div>
-  
+
   </section>
 
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
