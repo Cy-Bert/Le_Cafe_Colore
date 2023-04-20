@@ -1,22 +1,28 @@
-
 // Import des elements HTML
 
-// let listChildren = body.children;
+let listChildren = body.children;
+let listMainChildren = document.querySelector('#main').children;
 
-// for (let i = 0; i < listChildren.length; i++) {
+//Définir ma fonction qui se nomme fetchHTML
+function fetchHtml(list){
+  for (let i = 0; i < list.length; i++) {
     
-//   if (listChildren[i].id != "") {
-//     const xhr = new XMLHttpRequest();
-//     xhr.onreadystatechange = function () {
-//       if (this.readyState === 4 && this.status === 200) {
-//         document.getElementById(listChildren[i].id).innerHTML =
-//           xhr.responseText;
-//       }
-//     };
-//     xhr.open("GET", listChildren[i].id + ".html", true);
-//     xhr.send();
-//   }
-// }
+    if (list[i].id != "") {
+        const xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+          document.querySelector("#"+list[i].id).innerHTML =
+            xhr.responseText;
+        }
+      };
+      xhr.open("GET", list[i].id + ".html", true);
+      xhr.send();
+    }
+  }
+}
 
+//Appeler mes fonctions
+fetchHtml(listChildren)
+fetchHtml(listMainChildren)
 
 

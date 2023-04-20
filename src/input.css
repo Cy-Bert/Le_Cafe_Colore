@@ -20,11 +20,12 @@
     @apply mx-5 my-20 md:mx-20 border-4 p-2 md:p-7 rounded-2xl bg-[#fafafa] shadow-2xl;
   }
   .bouton {
-    @apply font-p border text-white font-bold rounded-2xl w-32 h-10;
+    @apply font-p border text-white font-bold rounded-2xl w-44 h-10;
   }
   .input {
     @apply border shadow rounded focus:outline-none;
   }
+
   .image {
     @apply shadow-lg;
   }
