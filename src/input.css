@@ -10,7 +10,7 @@
     @apply  text-6xl font-h2 py-5 font-bold text-center;
   }
   p {
-    @apply font-p;
+    @apply font-p text-xl;
   }
   
 }
